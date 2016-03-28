@@ -11,6 +11,10 @@
 #menu-0 .mbr-navbar__hamburger {
   color: #ffffff;
 }
+#footer1-2 P {
+  text-align: center;
+  color: #ffffff;
+}
 #content5-11 .mbr-header .mbr-header__text {
   text-align: center;
   color: #fff;
@@ -25,8 +29,12 @@
 }
 #msg-box3-12 .mbr-header .mbr-header__text {
   text-align: center;
+  color: #ffffff;
 }
 #msg-box3-12 .mbr-header .mbr-header__subtext {
+  text-align: center;
+}
+#msg-box3-12 .mbr-article P {
   text-align: center;
 }
 
@@ -75,4 +83,95 @@
 }
 #msg-box1-10 .mbr-article {
   color: #fff;
+}
+#footer1-2 P {
+  text-align: center;
+  color: #ffffff;
+}
+
+#menu-23 .mbr-brand__name {
+  font-size: 16px;
+}
+#menu-23.mbr-navbar--stuck .mbr-navbar__section {
+  background: #2c2c2c;
+}
+#menu-23 .mbr-navbar__section {
+  background: #2c2c2c;
+}
+#menu-23 .mbr-navbar__hamburger {
+  color: #ffffff;
+}
+#content5-24 .mbr-header .mbr-header__text {
+  text-align: center;
+  color: #fff;
+}
+#content5-24 .mbr-header .mbr-header__subtext {
+  text-align: center;
+  color: #fff;
+}
+#content5-24 .mbr-article {
+  color: #fff;
+}
+#msg-box4-25 .mbr-header__text {
+  color: #ffffff;
+}
+#msg-box4-25 .mbr-header__subtext {
+  color: #ffffff;
+}
+#msg-box4-25 .mbr-article {
+  color: #ffffff;
+}
+#header3-26 H3 {
+  font-size: 18px;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+}
+#header3-26 P {
+  font-size: 18px;
+}
+#msg-box1-27 .mbr-header .mbr-header__text {
+  color: #fff;
+}
+#msg-box1-27 .mbr-article {
+  color: #fff;
+}
+#footer1-28 P {
+  text-align: center;
+  color: #ffffff;
+}
+#menu-29 .mbr-brand__name {
+  font-size: 16px;
+}
+#menu-29.mbr-navbar--stuck .mbr-navbar__section {
+  background: #2c2c2c;
+}
+#menu-29 .mbr-navbar__section {
+  background: #2c2c2c;
+}
+#menu-29 .mbr-navbar__hamburger {
+  color: #ffffff;
+}
+#content5-30 .mbr-header .mbr-header__text {
+  text-align: center;
+  color: #fff;
+}
+#content5-30 .mbr-header .mbr-header__subtext {
+  text-align: center;
+  color: #fff;
+}
+#content5-30 .mbr-article {
+  color: #fff;
+}
+#content5-30 .mbr-header .mbr-header__text P {
+  color: #000000;
+}
+#contacts2-41 P {
+  color: #ffffff;
+}
+#form1-42 .mbr-header__text {
+  color: #ffffff;
+}
+#footer1-34 P {
+  text-align: center;
+  color: #ffffff;
 }
