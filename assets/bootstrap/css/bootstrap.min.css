@@ -3952,7 +3952,7 @@ input[type="button"].btn-block {
     font-size: 14px;
   }
 }
-.btn-decorator .btn:after {
+/*.btn-decorator .btn:after {
   -webkit-transform: scale(0, 1);
   -ms-transform: scale(0, 1);
   -o-transform: scale(0, 1);
@@ -3973,7 +3973,7 @@ input[type="button"].btn-block {
   position: relative;
   top: 3px;
   width: 100%;
-}
+} */
 .btn-decorator .btn:hover:after,
 .btn-decorator .btn:focus:after {
   -webkit-transform: scale(1, 1);

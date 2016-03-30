@@ -162,7 +162,7 @@ html {
   text-align: right;
 }
 .mbr-navbar__column {
-  display: table-cell;
+  display: list-item;
   vertical-align: middle;
 }
 .mbr-navbar__column--xxs {
