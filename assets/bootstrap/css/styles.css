@@ -1,3 +1,4 @@
+
 #menu-0 .mbr-navbar__section{
 	background-image: url(../../../assets/images/barra_menu_bricks.jpg)  !important;
 	background-size: 100% auto !important;
@@ -18,8 +19,14 @@
 
 .mbr-navbar__item{
 transition: 0.1s ease;	
+}
 
-
+.active::before, .active::after, .mbr-navbar__item:hover::before, .mbr-navbar__item:hover::after{
+	content: "";
+    background: #900;
+    height: 50px;
+    width: 2px;
+    position: absolute;
 
 }
 
@@ -37,6 +44,13 @@ transition: 0.1s ease;
 	top: -8px;
 	height: 50px;
 }
+
+.alignDer{
+	text-align: right !important;
+	font-size: 11px !important;
+}
+
+
 
 
 
