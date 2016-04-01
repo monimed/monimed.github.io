@@ -1,3 +1,58 @@
+@font-face {
+    font-family: 'aller_display';
+    src: url('../../fonts/aller_display.eot');
+    src: url('../../fonts/aller_display.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/aller_display.woff2') format('woff2'),
+         url('../../fonts/aller_display.woff') format('woff'),
+         url('../../fonts/aller_display.ttf') format('truetype'),
+         url('../../fonts/aller_display.svg#aller_display') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'aero';
+    src: url('aero.eot');
+    src: url('aero.eot?#iefix') format('embedded-opentype'),
+         url('aero.woff2') format('woff2'),
+         url('aero.woff') format('woff'),
+         url('aero.ttf') format('truetype'),
+         url('aero.svg#aero') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Frutiger-Cn';
+    src: url('Frutiger-Cn.eot');
+    src: url('Frutiger-Cn.eot?#iefix') format('embedded-opentype'),
+         url('Frutiger-Cn.woff') format('woff'),
+         url('Frutiger-Cn.ttf') format('truetype'),
+    font-weight: normal;
+    font-style: normal;
+}
+
+.aller{
+	font-family: 'aller_display' !important;
+}
+
+.aero{
+	font-family: 'aero' !important;
+}
+.frutiger{
+	font-family: 'Frutiger-Cn' !important;
+}
+
+.enlace{
+	font-style: normal;
+	text-decoration: none;
+	color: white;
+}
+
+.enlace:hover{
+	color:white;
+}
+
 
 #menu-0 .mbr-navbar__section{
 	background-image: url(../../../assets/images/barra_menu_bricks.jpg)  !important;
@@ -47,7 +102,7 @@ transition: 0.1s ease;
 
 .alignDer{
 	text-align: right !important;
-	font-size: 11px !important;
+	font-size: 13px !important;
 }
 
 
@@ -74,6 +129,10 @@ transition: 0.1s ease;
 
 .redstripe{
 	background: #951200 !important;
+}
+
+.italic{
+	font-style: italic !important;
 }
 
 
