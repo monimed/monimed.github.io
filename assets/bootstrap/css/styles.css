@@ -51,6 +51,30 @@ transition: 0.1s ease;
 }
 
 
+.img{
+	width: 100%;
+}
+
+.sombra{
+	text-shadow: 0 0 15px black;
+}
+
+.redbg{
+	background: #DC001B;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 5px;
+	color: white;
+}
+
+.paddingsmall{
+	padding-top: 10px !important;
+}
+
+.redstripe{
+	background: #951200 !important;
+}
 
 
 
