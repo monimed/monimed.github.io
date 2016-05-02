@@ -1,10 +1,11 @@
 h1{
 	background-image: url(../images/logo.png);
-	background-size: 513px 109px; 
-	background-repeat: no-repeat;
-	width: 513px;
-	height: 109px;
-	text-indent: -999999px;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    width: 80%;
+    min-height: 77px;
+    text-indent: -999999px;
+    height: 124px;
 }
 
 .head{
@@ -25,4 +26,12 @@ h1{
 	padding-top: .5em;
 	font-size: 2em;
 	bottom: -.5em;
+}
+
+img{
+	width: 100%
+}
+
+footer{
+	background-color: black;
 }
