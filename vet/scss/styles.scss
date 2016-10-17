@@ -1,0 +1,186 @@
+
+
+/*fonts*/
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('../fonts/raleway-bold.eot');
+    src: url('../fonts/raleway-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-bold.woff2') format('woff2'),
+         url('../fonts/raleway-bold.woff') format('woff'),
+         url('../fonts/raleway-bold.ttf') format('truetype'),
+         url('../fonts/raleway-bold.svg#ralewaybold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../fonts/raleway-regular.eot');
+    src: url('../fonts/raleway-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-regular.woff2') format('woff2'),
+         url('../fonts/raleway-regular.woff') format('woff'),
+         url('../fonts/raleway-regular.ttf') format('truetype'),
+         url('../fonts/raleway-regular.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*varibles and mixins*/
+$base_color: #00a6d3;
+$sec_color: #f2f8f9; 
+$dark_color: #175373;
+$title: #79447c;
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
+
+/*general styles*/
+a{
+    color: $base_color;
+    &:hover{
+        color: $base_color;
+        text-decoration: underline;
+    }
+}
+
+.fa{
+    margin: 0 10px; 
+    color: $dark_color;
+}
+
+/*HEADER*/
+
+header{
+    border-bottom: 5px solid $base_color;
+    z-index: 1;
+    @include box-shadow(-3px, 0, 10px, rgba(0, 0, 0, .5));
+    .head01{
+        background-color: $sec_color;
+        font-family: "Century Gothic";
+        padding: 10px 0;
+        font-size: 1em;
+    }
+    .head02{
+    }
+    h1{
+        background:  url('../images/logoCAC.png') no-repeat center;
+        width: 129px;
+        height:57px;
+        text-indent: -999999px;
+    }
+    .navbar-default{
+        border:none;
+        background: none;
+        border-radius: none;
+        box-shadow: none;
+        height: 90px;
+        .navbar-collapse{
+            margin-top: 50px;
+        }
+        .navbar-nav li{
+           font-family: 'ralewayregular';
+           a{
+                text-transform: uppercase !important;
+                color: $dark_color;
+                padding: 15px 15px 3px 15px;
+                font-size: 1em;
+                &:hover{
+                    font-family: 'ralewaybold';
+                    color: $dark_color;
+                    border-bottom: 2px solid $dark_color;
+                }
+
+           }
+           &.active{
+                a{
+                    font-family: 'ralewaybold';
+                    background:none;
+                    box-shadow: none;
+                    color: $dark_color;
+                    border-bottom: 2px solid $dark_color;
+                    &:hover{
+                        font-family: 'ralewaybold';
+                        color: $dark_color;
+                        border-bottom: 2px solid $dark_color;
+                        background: none;
+                    }
+                }
+           }
+           
+        }
+    }
+}
+
+section{
+    img{
+        width:100%;
+        margin-bottom: 25px;
+    }
+    .title{
+        
+        &:after{
+            content: "\00a0";
+            margin-top: 10px;
+            width: 100px;
+            height: 10px;
+            background: $title;
+            display: block;
+            float: right;
+        }
+        & p{
+            color: $title;
+            padding: 30px;
+            border: 5px solid $title;
+            font-family: 'ralewaybold';
+            font-size: 2em;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+        }
+    }
+    .text{
+        font-family: 'ralewayregular';
+        font-size: 1.2em;
+    }
+}
+
+
+footer{
+    color: white;
+    font-family: "Century Gothic";
+    font-size: 1em;
+    margin-top: 50px;
+    .fa{
+        color: white;
+        font-size: 1.2em;
+    }
+    .foot01{
+        background: #497daf;
+        padding: 10px 0;
+        line-height: 50px;
+        text-align: left;
+    }
+    .foot02{
+        background: #345f87;
+        padding: 10px 0;
+        text-align: center;
+    }
+    .after{
+        &:after{
+            content: "|";
+            color: white;
+            font-size: 1.3em;
+            float: right;
+        }
+    }
+}
