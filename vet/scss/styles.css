@@ -112,6 +112,17 @@ section .nostext {
     float: right; }
   section .nostext ul li {
     list-style-type: circle; }
+section .google-maps {
+  position: relative;
+  padding-bottom: 30%;
+  height: 0;
+  overflow: hidden; }
+section .google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important; }
 
 footer {
   color: white;
