@@ -97,8 +97,21 @@ section .text {
   font-size: 1.2em; }
 section .nosotros {
   width: auto; }
-section .nostext ul li {
-  list-style-type: circle; }
+section .servicios {
+  width: 100%;
+  height: auto; }
+section .nostext {
+  padding: 0 2em; }
+  section .nostext:after {
+    content: "\00a0";
+    margin-top: 10px;
+    width: 50px;
+    height: 5px;
+    background: #79447c;
+    display: block;
+    float: right; }
+  section .nostext ul li {
+    list-style-type: circle; }
 
 footer {
   color: white;

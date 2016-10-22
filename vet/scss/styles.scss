@@ -128,7 +128,7 @@ section{
         margin-bottom: 25px;
     }
     .title{
-        
+        margin-bottom: 20px;
         &:after{
             content: "\00a0";
             margin-top: 10px;
@@ -151,6 +151,28 @@ section{
     .text{
         font-family: 'ralewayregular';
         font-size: 1.2em;
+    }
+    .nosotros{
+        width: auto;
+    }
+    .servicios{
+        width: 100%;
+        height: auto;
+    }
+    .nostext{
+        padding: 0 2em;
+        &:after{
+            content: "\00a0";
+            margin-top: 10px;
+            width: 50px;
+            height: 5px;
+            background: $title;
+            display: block;
+            float: right;
+        }
+        ul li{
+            list-style-type:circle;
+        }
     }
 }
 
