@@ -70,8 +70,61 @@ header{
         font-family: "Century Gothic";
         padding: 10px 0;
         font-size: 1em;
+        .redes-header{
+            text-align: right;
+        }
+        @media screen and (max-width: 540px){
+            .fa-envelope, .fa-phone{
+                display: none;
+            }
+            .border{
+            border: none;
+            }
+            .padding{
+                padding: 0;
+            }
+            font-size: .8em;
+        }
+    }
+    .border{
+        border-right: 1px solid $dark_color;
     }
     .head02{
+         @media screen and (max-width: 767px){
+            .navbar-header{
+                .navbar-toggle{
+                    top: 50px;
+                    border: none;
+                    & .icon-bar{
+                        background-color: $base_color;
+                    }
+                    &:hover{
+                        background: transparent;
+                    }
+                }
+             }
+            .navbar-collapse{
+                background: white;
+                border: 1px solid $base_color;
+                border-radius: 3px;
+                position: absolute;
+                right: 15px;
+                z-index: 9;
+                @include box-shadow(3px, 1px, 10px, rgba(0, 0, 0, .2));
+                ul{
+                    li{
+                        text-align: center;
+                        font-size: 1.3em;
+                        &.active, &:hover{
+                            background-color: rgba(209, 209, 209, .2);
+                            a{
+                                border:none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     h1{
         background:  url('../images/logoCAC.png') no-repeat center;

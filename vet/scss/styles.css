@@ -35,6 +35,44 @@ header {
     font-family: "Century Gothic";
     padding: 10px 0;
     font-size: 1em; }
+    header .head01 .redes-header {
+      text-align: right; }
+    @media screen and (max-width: 540px) {
+      header .head01 {
+        font-size: .8em; }
+        header .head01 .fa-envelope, header .head01 .fa-phone {
+          display: none; }
+        header .head01 .border {
+          border: none; }
+        header .head01 .padding {
+          padding: 0; } }
+  header .border {
+    border-right: 1px solid #175373; }
+  @media screen and (max-width: 767px) {
+    header .head02 .navbar-header .navbar-toggle {
+      top: 50px;
+      border: none; }
+      header .head02 .navbar-header .navbar-toggle .icon-bar {
+        background-color: #00a6d3; }
+      header .head02 .navbar-header .navbar-toggle:hover {
+        background: transparent; }
+    header .head02 .navbar-collapse {
+      background: white;
+      border: 1px solid #00a6d3;
+      border-radius: 3px;
+      position: absolute;
+      right: 15px;
+      z-index: 9;
+      -webkit-box-shadow: 3px 1px 10px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 3px 1px 10px rgba(0, 0, 0, 0.2);
+      box-shadow: 3px 1px 10px rgba(0, 0, 0, 0.2); }
+      header .head02 .navbar-collapse ul li {
+        text-align: center;
+        font-size: 1.3em; }
+        header .head02 .navbar-collapse ul li.active, header .head02 .navbar-collapse ul li:hover {
+          background-color: rgba(209, 209, 209, 0.2); }
+          header .head02 .navbar-collapse ul li.active a, header .head02 .navbar-collapse ul li:hover a {
+            border: none; } }
   header h1 {
     background: url("../images/logoCAC.png") no-repeat center;
     width: 129px;
