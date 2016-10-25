@@ -138,14 +138,20 @@ section .title {
     margin-bottom: 40px; }
 section .text {
   font-family: 'ralewayregular';
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  margin: 2em 0; }
 section .nosotros {
-  width: auto; }
+  width: auto;
+  display: block;
+  margin: 0 auto; }
 section .servicios {
   width: 100%;
   height: auto; }
 section .nostext {
-  padding: 0 2em; }
+  padding: 0 2em;
+  margin: 45px 0; }
+  section .nostext h3 {
+    text-align: center; }
   section .nostext:after {
     content: "\00a0";
     margin-top: 10px;
@@ -154,8 +160,12 @@ section .nostext {
     background: #79447c;
     display: block;
     float: right; }
-  section .nostext ul li {
-    list-style-type: circle; }
+  section .nostext ul {
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center; }
+    section .nostext ul li {
+      list-style: none; }
 section .google-maps {
   position: relative;
   padding-bottom: 30%;
@@ -185,10 +195,25 @@ footer {
     background: #345f87;
     padding: 10px 0;
     text-align: center; }
+  @media screen and (max-width: 767px) {
+    footer .social, footer .payment {
+      text-align: center; } }
+  @media screen and (max-width: 767px) {
+    footer .after {
+      text-align: center; } }
   footer .after:after {
     content: "|";
     color: white;
     font-size: 1.3em;
     float: right; }
+    @media screen and (max-width: 767px) {
+      footer .after:after {
+        content: ''; } }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    footer .after {
+      margin: 0;
+      padding: 0; }
+      footer .after:after {
+        content: ''; } }
 
 /*# sourceMappingURL=styles.css.map */

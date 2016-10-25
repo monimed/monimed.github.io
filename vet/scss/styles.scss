@@ -217,9 +217,12 @@ section{
     .text{
         font-family: 'ralewayregular';
         font-size: 1.2em;
+        margin: 2em 0;
     }
     .nosotros{
         width: auto;
+        display: block;
+        margin: 0 auto;
     }
     .servicios{
         width: 100%;
@@ -227,6 +230,10 @@ section{
     }
     .nostext{
         padding: 0 2em;
+        margin: 45px 0;
+        h3{
+            text-align: center;
+        }
         &:after{
             content: "\00a0";
             margin-top: 10px;
@@ -236,8 +243,13 @@ section{
             display: block;
             float: right;
         }
-        ul li{
-            list-style-type:circle;
+        ul{
+            margin: 0 !important;
+            padding: 0 !important;
+            text-align: center;
+            li{
+               list-style: none  
+            }
         }
     }
 
@@ -277,12 +289,33 @@ footer{
         padding: 10px 0;
         text-align: center;
     }
+    .social, .payment{
+        @media screen and (max-width: 767px){
+            text-align: center;
+        }
+    }
     .after{
+        @media screen and (max-width: 767px){
+            text-align: center;
+        }
+
         &:after{
             content: "|";
             color: white;
             font-size: 1.3em;
             float: right;
+            @media screen and (max-width: 767px){
+                content: '';
+            }
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width: 991px){
+        .after{
+            margin: 0;
+            padding: 0;
+            &:after{
+                content: '';
+            }
         }
     }
 }
