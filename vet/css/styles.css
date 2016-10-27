@@ -40,7 +40,8 @@ header {
     background-color: #f2f8f9;
     font-family: "Century Gothic";
     padding: 10px 0;
-    font-size: 1em; }
+    font-size: 1em;
+    border-bottom: 1px solid rgba(127, 163, 169, 0.1); }
     header .head01 .redes-header {
       text-align: right; }
     @media screen and (max-width: 540px) {
@@ -115,11 +116,14 @@ header {
           border-bottom: 2px solid #175373;
           background: none; }
 
+/*FIN HEADER*/
+/*MAIN*/
 section img {
   width: 100%;
   margin-bottom: 25px; }
 section .title {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  padding: 0; }
   section .title:after {
     content: "\00a0";
     margin-top: 10px;
@@ -170,14 +174,35 @@ section .google-maps {
   position: relative;
   padding-bottom: 30%;
   height: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-bottom: 2em; }
 section .google-maps iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100% !important;
   height: 100% !important; }
+section label {
+  display: block;
+  text-transform: uppercase;
+  font-family: 'ralewaybold'; }
+section input, section textarea {
+  border: 1px solid #79447c;
+  width: 100%;
+  border-radius: 1px;
+  margin: 10px 0;
+  padding: 10px; }
+section.contacto .fa {
+  font-size: 2em;
+  display: inline-block;
+  line-height: 88px;
+  width: 50px; }
+section.contacto .contact-side {
+  font-family: 'ralewaybold';
+  line-height: 1.5em; }
 
+/*FIN MAIN*/
+/*FOOTER*/
 footer {
   color: white;
   font-family: "Century Gothic";
@@ -215,5 +240,7 @@ footer {
       padding: 0; }
       footer .after:after {
         content: ''; } }
+
+/*FIN FOOTER*/
 
 /*# sourceMappingURL=styles.css.map */

@@ -83,6 +83,7 @@ header{
         font-family: "Century Gothic";
         padding: 10px 0;
         font-size: 1em;
+        border-bottom: 1px solid rgba(127, 163, 169, .1);
         .redes-header{
             text-align: right;
         }
@@ -187,7 +188,8 @@ header{
         }
     }
 }
-
+/*FIN HEADER*/
+/*MAIN*/
 section{
     img{
         width:100%;
@@ -195,6 +197,7 @@ section{
     }
     .title{
         margin-bottom: 20px;
+        padding: 0;
         &:after{
             content: "\00a0";
             margin-top: 10px;
@@ -258,6 +261,7 @@ section{
         padding-bottom: 30%; // This is the aspect ratio
         height: 0;
         overflow: hidden;
+        margin-bottom: 2em;
     }
     .google-maps iframe {
         position: absolute;
@@ -266,9 +270,33 @@ section{
         width: 100% !important;
         height: 100% !important;
     }
+    label{
+        display: block;
+        text-transform: uppercase;
+        font-family: 'ralewaybold';
+    }
+    input, textarea{
+        border: 1px solid $title;
+        width: 100%;
+        border-radius: 1px;
+        margin: 10px 0;
+        padding: 10px;
+    }
+    &.contacto{
+        .fa{
+            font-size: 2em;
+            display: inline-block;
+            line-height: 88px;
+            width: 50px;
+        }
+        .contact-side{
+            font-family: 'ralewaybold';
+            line-height: 1.5em;
+        }
+    }
 }
-
-
+/*FIN MAIN*/
+/*FOOTER*/
 footer{
     color: white;
     font-family: "Century Gothic";
@@ -319,3 +347,4 @@ footer{
         }
     }
 }
+/*FIN FOOTER*/
