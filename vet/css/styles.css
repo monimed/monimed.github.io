@@ -82,9 +82,11 @@ header {
             border: none; } }
   header h1 {
     background: url("../images/logoCAC.png") no-repeat center;
-    width: 129px;
-    height: 57px;
-    text-indent: -999999px; }
+    width: 160px;
+    height: 70px;
+    text-indent: -999999px;
+    position: relative;
+    top: -15px; }
   header .navbar-default {
     border: none;
     background: none;
@@ -218,7 +220,8 @@ footer {
     background: #497daf;
     padding: 10px 0;
     line-height: 50px;
-    text-align: left; }
+    text-align: left;
+    font-size: .8em; }
   footer .foot02 {
     background: #345f87;
     padding: 10px 0;
