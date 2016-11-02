@@ -221,6 +221,7 @@ section{
         font-family: 'ralewayregular';
         font-size: 1.2em;
         margin: 2em 0;
+        text-align: justify;
     }
     .nosotros{
         width: auto;
@@ -236,6 +237,9 @@ section{
         margin: 45px 0;
         h3{
             text-align: center;
+        }
+        p{
+            text-align: justify;
         }
         &:after{
             content: "\00a0";
