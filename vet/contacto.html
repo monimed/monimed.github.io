@@ -82,13 +82,13 @@
       <p>Fundada en el año 2016, Clínica Animal’s Center nace con el objetivo de brindar servicios veterinarios de primer nivel a todos los animales de compañía, siempre bajo la filosofía del bienestar tanto para el propietario como para la mascota.</p>
     </div>
     <div class="col-sm-6 text">
-      <form>
+      <form name="frmContacto" method="post" action="send.php">
         <label for="nombre">Nombre</label>
-        <input type="text" placeholder="Nombre" >
-        <label for="nombre">Correo electr&oacute;nico</label>
-        <input type="text" placeholder="Correo" >
+        <input type="text" name="nombre" placeholder="Nombre" >
+        <label for="correo">Correo electr&oacute;nico</label>
+        <input type="text" name="correo" placeholder="Correo" >
         <label for="mensaje">Tu mensaje</label>
-        <textarea placeholder="Deja tu mensaje" rows="7"></textarea>
+        <textarea name="mensaje" placeholder="Deja tu mensaje" rows="7"></textarea>
       </form>
     </div>
     <div class="col-sm-6 text contact-side">
