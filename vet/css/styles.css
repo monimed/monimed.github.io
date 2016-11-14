@@ -222,6 +222,8 @@ footer {
     line-height: 50px;
     text-align: left;
     font-size: .8em; }
+    footer .foot01 .correoFooter {
+      text-align: center; }
   footer .foot02 {
     background: #345f87;
     padding: 10px 0;
