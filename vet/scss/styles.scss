@@ -318,9 +318,6 @@ footer{
         line-height: 50px;
         text-align: left;
         font-size: .8em;
-        .correoFooter{
-            text-align: center;
-        }
     }
     .foot02{
         background: #345f87;
@@ -355,6 +352,9 @@ footer{
                 content: '';
             }
         }
+    }
+    .correoFooter{
+        text-align: center;
     }
 }
 /*FIN FOOTER*/
