@@ -44,7 +44,7 @@ header {
     border-bottom: 1px solid rgba(127, 163, 169, 0.1); }
     header .head01 .redes-header {
       text-align: right; }
-    @media screen and (max-width: 540px) {
+    @media screen and (max-width: 768px) {
       header .head01 {
         font-size: .8em; }
         header .head01 .fa-envelope, header .head01 .fa-phone {
