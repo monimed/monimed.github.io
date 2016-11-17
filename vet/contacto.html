@@ -77,18 +77,18 @@
       <p>no dudes en comunicarte con nosotros,<br>te atenderemos a la brevedad. <br/>también contáctanos por redes sociales o vía telefónica</p>
     </div>
     <div class="clearfix"></div>
-    <div class="col-sm-12 text">
+    <!-- <div class="col-sm-12 text">
       <p>Fundada en el año 2016, Clínica Animal’s Center nace con el objetivo de brindar servicios veterinarios de primer nivel a todos los animales de compañía, siempre bajo la filosofía del bienestar tanto para el propietario como para la mascota.</p>
-    </div>
+    </div> -->
     <div class="col-sm-6 text">
-      <form name="frmContacto" method="get" action="send.php">
-        <label for="nombre">Nombre</label>
-        <input type="text" name="nombre" placeholder="Nombre" >
-        <label for="correo">Correo electr&oacute;nico</label>
-        <input type="text" name="correo" placeholder="Correo" >
-        <label for="mensaje">Tu mensaje</label>
-        <textarea name="mensaje" placeholder="Deja tu mensaje" rows="7"></textarea>
-        <input type="submit" value="Enviar">
+      <formid="contact_form" action="send.php" method="POST" enctype="multipart/form-data">
+        <label for="name">Nombre</label>
+        <input id="name" type="text" name="name" type="text" placeholder="Nombre" >
+        <label for="email">Correo electr&oacute;nico</label>
+        <input id="email" name="email" type="text" placeholder="Correo" >
+        <label for="message">Tu mensaje</label>
+        <textarea  id="message" name="message" placeholder="Deja tu mensaje" rows="7"></textarea>
+        <input id="submit_button" type="submit" value="Enviar">
       </form>
     </div>
     <div class="col-sm-6 text contact-side">
