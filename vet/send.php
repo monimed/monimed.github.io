@@ -1,6 +1,7 @@
 <?php
+echo ('tu');
 if(isset($_POST['email'])) {
-	echo ('tu');
+
 
 // Debes editar las próximas dos líneas de código de acuerdo con tus preferencias
 $email_to = "cci_moni@hotmail.com";
