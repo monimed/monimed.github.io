@@ -301,6 +301,20 @@ section{
         }
     }
 }
+#submit_button{
+    border: 3px solid $title;
+    background-color: $title;
+    color: white;
+
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    &:hover{
+        background-color: white;
+        color: $title;
+    }
+}
 /*FIN MAIN*/
 /*FOOTER*/
 footer{

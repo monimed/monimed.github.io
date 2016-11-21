@@ -206,6 +206,18 @@ section.contacto .contact-side {
   font-family: 'ralewaybold';
   line-height: 1.5em; }
 
+#submit_button {
+  border: 3px solid #79447c;
+  background-color: #79447c;
+  color: white;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out; }
+  #submit_button:hover {
+    background-color: white;
+    color: #79447c; }
+
 /*FIN MAIN*/
 /*FOOTER*/
 footer {
