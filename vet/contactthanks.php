@@ -76,7 +76,7 @@
     <div class="clearfix"></div>
 
     <div class="col-sm-12 title">
-      <p>Mensaje enviado <br/>
+      <p>Mensaje enviado. <br/>
 puedes regresar a <a href="index.html">inicio</a></p>
     </div>
   </div>
