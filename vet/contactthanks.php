@@ -1,27 +1,3 @@
-
-
-<body>
-
-	<div id="page-wrap">
-
-		
-		<p>Mensaje a animalscenter.com.mx</p>
-			
-			
-		<br /><br />
-		
-			
-		<h1>Mensaje enviado</h1><br />
-		
-		<p><a href="index.html">Regresa a inicio</a></p>
-	
-	</div>
-
-</body>
-
-</html>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -94,22 +70,10 @@
 
 <section class="container contacto">
   <div class="row">
-    <div class="google-maps">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.0157355788183!2d-99.03538678509162!3d19.54093798682288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f00ce5eb90ef%3A0xd79ac053095bd629!2sCuautitlan+2%2C+Cd+Azteca+1ra+Secc%2C+55120+Ecatepec+de+Morelos%2C+M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1478128239473" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
-    <div class="col-sm-12 title">
-      <p>no dudes en comunicarte con nosotros,<br>te atenderemos a la brevedad. <br/>también contáctanos por redes sociales o vía telefónica</p>
-    </div>
     <div class="clearfix"></div>
-    <!-- <div class="col-sm-12 text">
-      <p>Fundada en el año 2016, Clínica Animal’s Center nace con el objetivo de brindar servicios veterinarios de primer nivel a todos los animales de compañía, siempre bajo la filosofía del bienestar tanto para el propietario como para la mascota.</p>
-    </div> -->
     <div class="col-sm-12 title">
       <p>Mensaje enviado <br/>
-puedes regresar a inicio</p>
-    </div>
-    <div class="col-sm-12 text">
-      <p><a href="index.html">Inicio</a></p>
+puedes regresar a <a href="index.html">inicio</a></p>
     </div>
   </div>
 </section>
