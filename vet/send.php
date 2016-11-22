@@ -1,6 +1,6 @@
 <?php
-$EmailFrom = "cci_moni@hotmail.com";
-$EmailTo = "cci_moni@hotmail.com";
+$EmailFrom = "contacto@animalscenter.com.mx";
+$EmailTo = "contacto@animalscenter.com.mx";
 $Subject = "Correo desde animalscenter.com.mx";
 $name = Trim(stripslashes($_POST['name']));  
 $email = Trim(stripslashes($_POST['email'])); 
