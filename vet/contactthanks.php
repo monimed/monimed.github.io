@@ -70,7 +70,11 @@
 
 <section class="container contacto">
   <div class="row">
+    <div class="google-maps">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.0157355788183!2d-99.03538678509162!3d19.54093798682288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f00ce5eb90ef%3A0xd79ac053095bd629!2sCuautitlan+2%2C+Cd+Azteca+1ra+Secc%2C+55120+Ecatepec+de+Morelos%2C+M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1478128239473" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
     <div class="clearfix"></div>
+
     <div class="col-sm-12 title">
       <p>Mensaje enviado <br/>
 puedes regresar a <a href="index.html">inicio</a></p>
