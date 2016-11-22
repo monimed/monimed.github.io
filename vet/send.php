@@ -1,34 +1,39 @@
 <?php
-echo ('tu');
-if(isset($_POST['email'])) {
 
+$EmailTo = "cci_moni@hotmail.com";
+$Subject = "Correo desde animalscenter.com.mx";
+$name = Trim(stripslashes($_POST['name']));  
+$email = Trim(stripslashes($_POST['email'])); 
+$message = Trim(stripslashes($_POST['message'])); 
 
-// Debes editar las próximas dos líneas de código de acuerdo con tus preferencias
-$email_to = "cci_moni@hotmail.com";
-$email_subject = "Contacto desde el sitio web";
-
-// Aquí se deberían validar los datos ingresados por el usuario
-if(!isset($_POST['name']) ||
-!isset($_POST['email']) ||
-!isset($_POST['message'])) {
-
-echo "<b>Ocurrió un error y el formulario no ha sido enviado. </b><br />";
-echo "Por favor, vuelva atrás y verifique la información ingresada<br />";
-die();
+// validation
+$validationOK=true;
+if (!$validationOK) {
+  print "<meta http-equiv=\"refresh\" content=\"0;URL=error.htm\">";
+  exit;
 }
 
-$email_message = "Detalles del formulario de contacto:\n\n";
-$email_message .= "Nombre: " . $_POST['name'] . "\n";
-$email_message .= "E-mail: " . $_POST['email'] . "\n";
-$email_message .= "Comentarios: " . $_POST['message'] . "\n\n";
+// prepare email body text
+$Body = "";
+$Body .= "name: ";
+$Body .= $name;
+$Body .= "\n";
+$Body .= "email: ";
+$Body .= $email;
+$Body .= "\n";
+$Body .= "message: ";
+$Body .= $message;
+$Body .= "\n";
 
+// send email 
+$success = mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
 
-// Ahora se envía el e-mail usando la función mail() de PHP
-$headers = 'From: '.$email_from."\r\n".
-'Reply-To: '.$email_from."\r\n" .
-'X-Mailer: PHP/' . phpversion();
-@mail($email_to, $email_subject, $email_message, $headers);
+// redirect to success page 
+if ($success){
 
-echo "Tus comentarios a Clínica Animal's Center se han enviado con éxito :)";
+  print "<meta http-equiv=\"refresh\" content=\"0;URL=contactthanks.php\">";
+}
+else{
+  print "<meta http-equiv=\"refresh\" content=\"0;URL=error.htm\">";
 }
 ?>
