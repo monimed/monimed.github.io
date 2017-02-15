@@ -1,0 +1,158 @@
+	<link rel="stylesheet" type="text/css" href="../bootstrap/assets/stylesheets/css/styles.css">
+	<link rel=stylesheet href="../bootstrap/assets/stylesheets/bootstrap.css" type="text/css"/>
+	<script src="../js/jquery.js"></script>
+	<script src="../js/jquery-ui.min.js"></script>
+	<link rel="import" href="home.html">
+	
+	<body>	
+	<div class="container">
+		<section class="tabSolucion col-xs-12">
+
+			<div id="tabs">
+				<ul class="options">
+					<li class="active">
+						<a href="#tabs-1">Habitación</a>
+					</li>
+					<li>
+						<a href="#tabs-2">Restaurante</a>
+					</li>
+
+
+				</ul>
+				<div class="gradientDiv2"></div>
+				<div id="tabs-1">
+					<div id="accordion" class="menuTab col-xs-3">
+						<h3>Filtrar por:</h3>
+						<div>
+							<ul class="filter-list">
+								<li>Café</li>
+								<li>Máquinas</li>
+								<li>Accesorios</li>
+								<li>Servicios</li>
+							</ul>
+						</div>
+						<h3>Número de habitaciones</h3>
+						<div>
+
+							<div class="quatity-bar">
+								<label>1 habitación</label>
+								<label class="right">200 habitaciones</label>
+								<div class="select-bar" id="slider">
+									<div id="custom-handle" class="ui-slider-handle"></div>
+								</div>
+								<div class="coffee-bean">
+									<img src="../bootstrap/assets/images/solucion/coffee-bean.png">
+								</div>
+								<div class="coffee-bean right">
+									<img src="../bootstrap/assets/images/solucion/coffee-bean-2.png">
+								</div>
+							</div>	
+						</div>
+						<h3>Marca</h3>
+						<div>
+							<ul class="filter-list">
+								<li>Nescafé</li>
+								<li>Nescafé Dolce Gusto</li>
+								<li>Nescafé Milano</li>
+								<li>Nescafé Alegria</li>
+							</ul>
+						</div>
+						<h3>Precio</h3>
+						<div>
+							<ul class="filter-list">
+								<li>0 - $599.00</li>
+								<li>$600.00 - $1,099.00</li>
+								<li>$2,000.00 - $10,000.000</li>
+								<li>+ $10,000.00</li>
+								<li>Renta de equipo</li>
+							</ul>
+						</div>
+					</div>
+					<div class="catalog col-xs-9">
+						<div class="page-title">
+							<span>
+								<p>Solución para mi negocio</p>
+								<p>Hotel habitación</p>
+							</span>
+							<div class="red-line"></div>
+						</div>
+						<!-- BOTONES -->
+						<div class="toolCenter">
+							<button type="button" class="btn btn-red">
+								Agregar al carrito
+							</button>
+							<button type="button" class="btn btn-black">
+								Ver siguiente solución
+							</button>
+						</div>
+						<!-- PRODUCTOS	-->
+						<div class="product">
+							<div class="picture col-xs-4"></div>
+							<div class="product-info col-xs-4">
+								<div class="sku-product">sku</div>
+								<div class="name-product">Melody 3</div>
+								<div class="price-product">
+									<span>$1,700.00</span>
+									<p>$1,350.00</p>
+								</div>
+							</div>
+							<div class="action-product col-xs-2"><br><br>
+
+								<input id="spinner" name="value" class="spinner">
+								<div class="btn-wish"></div>
+								<div class="label">
+									<img src="#">
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<div id="tabs-2">
+					<p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+				</div>
+
+			</div>
+
+
+		</section>
+</div>
+		<script type="text/javascript">
+			$(document).ready (function(){
+				$( function() {
+					$( "#tabs" ).tabs();
+					$( "#accordion" ).accordion();
+				// SLIDE NUM DE HABITACIONES
+				$( "#slider" ).slider();
+				var handle = $( "#custom-handle" );
+				$( "#slider" ).slider({
+					create: function() {
+						handle.text( $( this ).slider( "value" ) );
+					},
+					slide: function( event, ui ) {
+						handle.text( ui.value );
+					}
+				});
+				// SELECT NUM DE PRODUCTOS
+				var spinner = $( "#spinner" ).spinner();
+
+				$( "#disable" ).on( "click", function() {
+					if ( spinner.spinner( "option", "disabled" ) ) {
+						spinner.spinner( "enable" );
+					} else {
+						spinner.spinner( "disable" );
+					}
+				});
+				$( "#destroy" ).on( "click", function() {
+					if ( spinner.spinner( "instance" ) ) {
+						spinner.spinner( "destroy" );
+					} else {
+						spinner.spinner();
+					}
+				});
+
+			});
+			});
+		</script>
+	</body>
+

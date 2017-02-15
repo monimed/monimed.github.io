@@ -1,0 +1,302 @@
+<!--INICIO DE SECCION -->
+	<section>
+            <div class="main-container">
+                <div class="main">
+                    <div class="col-main">
+                        <div class="page-title">
+                            <span>Registro de Pago</span>
+                        </div>
+                        <ol class="opc opc-firststep-billing panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <li id="opc-billing" class="section allow active panel panel-default">
+                                <div class="step-title panel-heading" role="tab" id="headingOne">
+                                    <span class="number">1</span>
+                                    <h2 class="panel-title">Información de envío</h2>
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Modificar</a>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                    <form id="co-billing-form" action="">
+                                        <div class="fieldset panel-body">
+                                            <p class="required">* Campos Requeridos</p>
+                                            <ul class="form-list">
+                                                <li class="wide">
+                                                    <label for="billing-address-select">Selecciones una dirección de envío de su libreta de direcciones o ingrese una nueva</label>
+                                                    <div class="input-box">
+                                                        <select name="billing_address_id" id="billing-address-select" class="address-select" title="" >
+                                                            <option value="1">Karen Reyes, CARLOS SANTAN 100, VENUSTIANO CARRANZA, Distrito Federal 15500, México</option>
+                                                            <option value="2" selected="selected">Karen Reyes, RET 9 FCO DEL PASO Y TRONCOSO, VENUSTIANO CARRANZA, Distrito Federal 15900, México</option>
+                                                            <option value="">Nuevas direcciones</option>
+                                                        </select>
+                                                    </div>
+                                                </li>
+                                                <li id="billing-new-address-form" class="scaffold-form">
+                                                    <div class="fieldset">
+                                                        <input name="billing[address_id]" value="31" id="billing:address_id" type="hidden">
+                                                        <ul>
+                                                            <li class="fields"><div class="customer-name">
+                                                                    <div class="field name-firstname">
+                                                                        <label for="billing:firstname" class="required"><em>*</em>Nombre</label>
+                                                                        <div class="input-box">
+                                                                            <input id="billing:firstname" name="billing[firstname]" value="Karen" title="Nombre" maxlength="255" class="input-text required-entry" type="text">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="field name-lastname">
+                                                                        <label for="billing:lastname" class="required"><em>*</em>Apellido</label>
+                                                                        <div class="input-box">
+                                                                            <input id="billing:lastname" name="billing[lastname]" value="Reyes" title="Apellido" maxlength="255" class="input-text required-entry" type="text">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="fields">
+                                                                <div class="field">
+                                                                    <label for="billing:company">Compañía</label>
+                                                                    <div class="input-box">
+                                                                        <input id="billing:company" name="billing[company]" value="" title="Compañía" class="input-text " type="text">
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="wide">
+                                                                <label for="billing:street1" class="required"><em>*</em>Dirección</label>
+                                                                <div class="input-box">
+                                                                    <input title="Calle" name="billing[street][]" id="billing:street1" value="RET 9 FCO DEL PASO Y TRONCOSO" class="input-text  required-entry" type="text">
+                                                                </div>
+                                                            </li>
+                                                            <li class="wide">
+                                                                <label for="billing:street2">Street Address 2</label>
+                                                                <div class="input-box">
+                                                                    <input title="Street Address 2" name="billing[street][]" id="billing:street2" value="" class="input-text " type="text">
+                                                                </div>
+                                                            </li>
+                                                            <li class="fields">
+                                                                <div class="field">
+                                                                    <label for="billing:city" class="required"><em>*</em>Ciudad</label>
+                                                                    <div class="input-box">
+                                                                        <input title="Ciudad" name="billing[city]" value="VENUSTIANO CARRANZA" class="input-text  required-entry" id="billing:city" type="text">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="field">
+                                                                    <label class="required"><em style="">*</em>Estado/Provincia</label>
+                                                                    <div class="input-box">
+                                                                        <select  title="Estado/Provincia" class="validate-select required-entry" >
+                                                                            <option value="">Por favor seleccione la región, estado o provincia</option>
+                                                                        </select>
+                                                                        <input id="billing:region" name="billing[region]" value="Distrito Federal" title="Estado/Provincia" class="input-text required-entry" style="" type="text">
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="fields">
+                                                                <div class="field">
+                                                                    <label for="billing:postcode" class="required"><em style="">*</em>C.P./Código Postal</label>
+                                                                    <div class="input-box">
+                                                                        <input title="C.P./Código Postal" name="billing[postcode]" id="billing:postcode" value="15900" class="input-text validate-zip-international" type="text">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="field">
+                                                                    <label for="billing:country_id" class="required"><em>*</em>País</label>
+                                                                    <div class="input-box">
+                                                                        <select name="billing[country_id]" id="billing:country_id" class="validate-select" title="País"><option value=""> </option><option value="MX" selected="selected">México</option></select>                        </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="fields">
+                                                                <div class="field">
+                                                                    <label for="billing:telephone" class="required"><em>*</em>Teléfono</label>
+                                                                    <div class="input-box">
+                                                                        <input name="billing[telephone]" value="5528536393" title="Teléfono" class="input-text  required-entry" id="billing:telephone" type="tel">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="field">
+                                                                    <label for="billing:fax">Fax</label>
+                                                                    <div class="input-box">
+                                                                        <input name="billing[fax]" value="" title="Fax" class="input-text " id="billing:fax" type="tel">
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+
+                                                            <li class="control">
+                                                                <input name="billing[save_in_address_book]" value="1" title="Guardar en libro de direcciones" id="billing:save_in_address_book" class="checkbox" type="checkbox"><label for="billing:save_in_address_book">Guardar en libro de direcciones</label>
+                                                            </li>
+                                                        </ul>
+                                                        <!--<div class="remember-me-popup">
+                                                            <div class="remember-me-popup-head">
+                                                                <h3>What's this?</h3>
+                                                                <a href="#" class="remember-me-popup-close" title="Cerrar">Cerrar</a>
+                                                            </div>
+                                                            <div class="remember-me-popup-body">
+                                                                <p>Checking "Remember Me" will let you access your shopping cart on this computer when you are logged out</p>
+                                                                <div class="remember-me-popup-close-button a-right">
+                                                                    <a href="#" class="remember-me-popup-close button" title="Cerrar"><span>Cerrar</span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>-->
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <input name="billing[use_for_shipping]" value="1" type="hidden">
+                                            <div class="buttons-set" id="billing-buttons-container">
+                                                <button type="button" title="Continuar" class="button" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><span><span>Continuar</span></span></button>
+                                                <span class="please-wait" id="billing-please-wait" >
+                                                    <img src="../bootstrap/assets/images/checkout/opc-ajax-loader.gif" alt="Cargando el siguiente paso..." title="Cargando el siguiente paso..." class="v-middle"> Cargando el siguiente paso...</span>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                            <li id="opc-shipping_method" class="section panel panel-default">
+                                <div class="panel-heading step-title" role="tab" id="headingTwo">
+                                    <span class="number">2</span>
+                                    <h2 class="panel-title">Método de envío</h2>
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> Modificar</a>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse step a-item" role="tabpanel" aria-labelledby="headingTwo">
+                                    <form id="co-shipping-method-form" action="">
+                                        <div class="panel-body">
+                                        <div id="checkout-shipping-method-load">
+
+                                        </div>
+                                        <div id="onepage-checkout-shipping-method-additional-load">
+                                            <div class="gift-messages">
+                                                <h3>¿Tiene usted algunos artículos de regalo en su pedido?</h3>
+                                                <p class="control">
+                                                    <input name="allow_gift_messages" id="allow_gift_messages" value="1" class="checkbox" type="checkbox">
+                                                    <label for="allow_gift_messages">Add gift options.</label>
+                                                </p>
+                                            </div>
+                                            <div class="gift-messages-form" id="allow-gift-message-container" style="">
+                                                <div class="inner-box">
+                                                    <h4>Gift Options for Individual Items</h4>
+                                                    <p class="control">
+                                                        <input name="allow_gift_messages_for_items" id="allow_gift_messages_for_items" value="1"  class="checkbox" type="checkbox">
+                                                        <label for="allow_gift_messages_for_items">Add gift options for Individual Items</label>
+                                                    </p>
+                                                    <div id="allow-gift-messages-for-items-container" style="">
+                                                        <p>You can leave this box blank if you do not wish to add a gift message for the item.</p>
+                                                        <ol>
+                                                            <li class="item">
+                                                                <div class="product-img-box">
+                                                                    <p class="product-image">
+                                                                        <img src="../bootstrap/assets/images/checkout/melody3.jpg" alt="Cafetera" title="CAfetera" width="75" height="75">
+                                                                    </p>
+                                                                    <p class="number">Artículo 1 de 1</p>
+                                                                </div>
+                                                                <div class="details">
+                                                                    <div class="f-fix">
+                                                                        <h5 class="product-name">Melody 3</h5>
+                                                                        <input name="giftmessage[18][type]" value="quote_item" type="hidden">
+                                                                        <ul class="form-list">
+                                                                            <li class="fields">
+                                                                                <div class="field">
+                                                                                    <label for="gift-message-18-from">De</label>
+                                                                                    <div class="input-box">
+                                                                                        <input name="giftmessage[18][from]" id="gift-message-18-from" title="De" value="Karen Reyes" class="input-text validation-passed" type="text">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="field">
+                                                                                    <label for="gift-message-18-to">Para</label>
+                                                                                    <div class="input-box">
+                                                                                        <input name="giftmessage[18][to]" id="gift-message-18-to" title="Para" value="Karen Reyes" class="input-text validation-passed" type="text">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li class="wide">
+                                                                                <label for="gift-message-18-message">Mensaje</label>
+                                                                                <div class="input-box">
+                                                                                    <textarea id="gift-message-18-message" onchange="toogleRequired('gift-message-18-message', ['gift-message-18-from', 'gift-message-18-to'])" class="input-text giftmessage-area validation-passed" name="giftmessage[18][message]" title="Mensaje" rows="5" cols="40"></textarea>
+                                                                                </div>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="buttons-set" id="shipping-method-buttons-container">
+                                            <p class="back-link"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><small>« </small>Regresar</a></p>
+                                            <button type="button" class="button" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><span><span>Continuar</span></span></button>
+                                            <span id="shipping-method-please-wait" class="please-wait" >
+                                                <img src="../bootstrap/assets/images/checkout/opc-ajax-loader.gif" alt="Cargando el siguiente paso..." title="Cargando el siguiente paso..." class="v-middle"> 
+                                                Cargando el siguiente paso...        
+                                            </span>
+                                        </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                            <li id="opc-payment" class="section panel panel-default">
+                                <div class="step-title panel-heading" role="tab" id="headingThree">
+                                    <span class="number">3</span>
+                                    <h2 class="panel-title">Información de Pago</h2>
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Modificar</a>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse step a-item" role="tabpanel" aria-labelledby="headingThree">
+                                    <form action="" id="co-payment-form">
+                                        <div class="panel-body fieldset">
+                                            <dl class="sp-methods" id="checkout-payment-method-load">
+                                                <!-- Content dynamically loaded. Content from the methods.phtml is loaded during the ajax call -->
+                                            </dl>
+                                        </div>
+                                    </form>
+                                    <div class="tool-tip" id="payment-tool-tip" >
+                                        <div class="btn-close"><a href="#" id="payment-tool-tip-close" title="Cerrar">Cerrar</a></div>
+                                        <div class="tool-tip-content"><img src="../bootstrap/assets/images/checkout/cvv.gif" alt="Número de verificación visual de la Tarjeta" title="Número de verificación visual de la Tarjeta"></div>
+                                    </div>
+                                    <div class="buttons-set" id="payment-buttons-container">
+                                        <p class="back-link"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><small>« </small>Regresar</a></p>
+                                        <button type="button" class="button" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><span><span>Continuar</span></span></button>
+                                        <span class="please-wait" id="payment-please-wait" >
+                                            <img src="../bootstrap/assets/images/checkout/opc-ajax-loader.gif" alt="Cargando el siguiente paso..." title="Cargando el siguiente paso..." class="v-middle"> Cargando el siguiente paso...    </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li id="opc-review" class="section panel panel-default">
+                                <div class="panel-heading step-title" role="tab" id="headingFour">
+                                    <span class="number">4</span>
+                                    <h2 class="panel-title">Reseña del Pedido</h2>
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Modificar</a>
+                                </div>
+                                <div id="collapseFour" class="panel-collapse collapse step a-item" role="tabpanel" aria-labelledby="headingFour">
+                                    <div class="panel-body order-review" id="checkout-review-load">
+                                        <h3>Resumen de la orden</h3>
+                                        <div class="buttons-set" id="payment-buttons-container">
+                                            <p class="back-link"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><small>« </small>Regresar</a></p>
+                                            <button type="button" class="button"><span><span>Finalizar</span></span></button>
+                                            <span class="please-wait" id="payment-please-wait" >
+                                                <img src="../bootstrap/assets/images/checkout/opc-ajax-loader.gif" alt="Cargando el siguiente paso..." title="Cargando el siguiente paso..." class="v-middle"> Cargando el siguiente paso...    </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ol>
+                        <div class="col-right sidebar">
+                            <div id="checkout-progress-wrapper">
+                                <div class="block block-progress opc-block-progress">
+                                    <div class="block-title">
+                                        <strong><span>El progreso de su pago</span></strong>
+                                    </div>
+                                    <div class="block-content">
+                                        <div class="billing-progress-opcheckout">
+                                            Direcciones de envío
+                                        </div>
+
+                                        <div class="shipping-progress-opcheckout">
+                                        </div>
+
+                                        <div class="shipping_method-progress-opcheckout">
+                                            Método de envío
+                                        </div>
+
+                                        <div class="payment-progress-opcheckout">
+                                            Método de pago
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            </div>
+	</section>
+<!--FIN DE SECCION -->
