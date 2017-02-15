@@ -1,0 +1,191 @@
+// ----------------------------------------------
+// Entrepids
+//Hoja de estilos para proyecto demo Nestle. Sección: Detalle de Producto;
+.catalog-category-view{
+	.col-md-12{
+		.page-container{
+			.breadcrumb{
+				background: none;
+				li{
+					a{
+					color: #434343;
+					}
+					&:before{
+						color: #434343;
+					}
+				}
+				.active{
+					color: $red;
+				}
+			}
+			.content-img{
+				height: auto;
+				img{
+				    width: 80%;
+				    height: auto;
+				    margin: 0 55px;
+
+				}
+
+			.thumbs{
+				display: inline-flex;
+				width: 100%;
+				}
+				.thumb-link{
+					width: 150px;
+				    height: 130px;
+				    overflow: hidden;
+				    padding: 0;
+				    margin: 0 8px;
+				     text-align: center;
+
+				    img{
+				    	width: 80%;
+					    height: auto;
+					    margin: 10px auto;
+				    }
+				}
+				.arrow-right{
+					width: 30px;
+					height: 30px;
+					background: url(/media/arrow-left.svg) no-repeat 35% 50%;
+					color: transparent;
+					top: 40px;
+    				position: relative;
+
+				}
+				.arrow-left{
+					width: 30px;
+					height: 30px;
+					background: url(/media/arrow-right.svg) no-repeat 35% 50%;
+					color: transparent;
+					top: 40px;
+    				position: relative;
+				}
+			}
+			.info-prod{
+				h1{
+					font-family: 'NescafeSans-Bold';
+					font-size: 15pt;
+					color: $red;
+				}
+				.stars{
+					display: inline-flex;
+				    float: right;
+				    position: absolute;
+				    left: 200px;
+				    top: 24px;
+				    background: url(/media/stars.svg) no-repeat 35% 50%;
+				    background-size: 18%;
+				    width: 100%;
+				    color: transparent;
+				}
+				.description{
+					color: #737373;
+					width: 60%;
+					font-size: 10pt;
+
+				}
+				.sku{
+					float: right;
+				    position: relative;
+				    text-align: left;
+				    top: -30px;
+				    right: 140px;
+				    color: #737373;
+				}
+				.price{
+					list-style: none;
+					padding: 0px;
+					margin-left: -10px;
+					.old-price{
+						display: inline-block;
+						margin: 0 12px;
+    					font-size: 14pt;
+    					color: #737373;
+    					text-decoration: line-through;
+
+					}
+					.new-price{
+						display: inline-block;
+						margin: 0 12px;
+    					font-size: 14pt;
+    					color: $red;
+    					font-weight: 500;
+
+					}
+				}
+				.stock{
+					color: #00913d;
+				}
+				.quantity{
+					width: 40%;
+					padding: 20px 0;
+					.less{
+						border: 2px solid #e1261c;
+					    height: 34px;
+					    width: 38px;
+					    border-radius: 6px 0 0 6px;
+					    text-align: center;
+					    color: #737373;
+					    position: relative;
+					    float: left;
+					    left: 2px;
+					    font-size: 14pt;
+					}
+					.add{
+						border: 2px solid #e1261c;
+					    height: 34px;
+					    width: 38px;
+					    border-radius: 0px 6px 6px 0px;
+					    text-align: center;
+					    color: #737373;
+					    position: relative;
+					    float: right;
+					    right: 114px;
+					    font-size: 14pt;
+
+					}
+						input{
+						    border: 2px solid $red;
+						    height: 34px;
+						    width: 50px;
+		    				border-radius: 0px;
+		    				text-align: center;
+		    				color: #737373;
+		    				&:focus{
+		    				outline:0px;
+
+		    					}
+							}
+					}
+					button{
+						@include button_red;
+						position: relative;
+					    top: 17px;
+					    right: 120px;
+					    float: right;
+				}
+				hr{
+					border-top: 1px solid #bfbfbf;
+					width: 85%;
+				    float: left;
+				    clear: both;
+				}
+				.more{
+					h3{
+						font-size: 12pt;
+						font-weight: 500;
+
+						color: #737373;
+
+					}
+					.fisrt, .second{
+						font-size: 10pt;
+						color: #737373;
+					}
+				}
+			}
+		}
+	}
+}
