@@ -28,7 +28,7 @@
                                                         </select>
                                                     </div>
                                                 </li>
-                                                <li id="billing-new-address-form" class="scaffold-form">
+                                                <li id="billing-new-address-form" class="scaffold-form" style="display: none;">
                                                     <div class="fieldset">
                                                         <input name="billing[address_id]" value="31" id="billing:address_id" type="hidden">
                                                         <ul>
@@ -135,7 +135,7 @@
                                             <div class="buttons-set" id="billing-buttons-container">
                                                 <button type="button" title="Continuar" class="button" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><span><span>Continuar</span></span></button>
                                                 <span class="please-wait" id="billing-please-wait" >
-                                                    <img src="../bootstrap/assets/images/checkout/opc-ajax-loader.gif" alt="Cargando el siguiente paso..." title="Cargando el siguiente paso..." class="v-middle"> Cargando el siguiente paso...</span>
+                                                    <img src="/bootstrap/assets/images/checkout/opc-ajax-loader.gif" alt="Cargando el siguiente paso..." title="Cargando el siguiente paso..." class="v-middle"> Cargando el siguiente paso...</span>
                                             </div>
                                         </div>
                                     </form>
@@ -174,7 +174,7 @@
                                                             <li class="item">
                                                                 <div class="product-img-box">
                                                                     <p class="product-image">
-                                                                        <img src="../bootstrap/assets/images/checkout/melody3.jpg" alt="Cafetera" title="CAfetera" width="75" height="75">
+                                                                        <img src="/bootstrap/assets/images/checkout/melody3.jpg" alt="Cafetera" title="CAfetera" width="75" height="75">
                                                                     </p>
                                                                     <p class="number">Artículo 1 de 1</p>
                                                                 </div>
@@ -216,7 +216,7 @@
                                             <p class="back-link"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><small>« </small>Regresar</a></p>
                                             <button type="button" class="button" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><span><span>Continuar</span></span></button>
                                             <span id="shipping-method-please-wait" class="please-wait" >
-                                                <img src="../bootstrap/assets/images/checkout/opc-ajax-loader.gif" alt="Cargando el siguiente paso..." title="Cargando el siguiente paso..." class="v-middle"> 
+                                                <img src="/bootstrap/assets/images/checkout/opc-ajax-loader.gif" alt="Cargando el siguiente paso..." title="Cargando el siguiente paso..." class="v-middle"> 
                                                 Cargando el siguiente paso...        
                                             </span>
                                         </div>
@@ -240,13 +240,13 @@
                                     </form>
                                     <div class="tool-tip" id="payment-tool-tip" >
                                         <div class="btn-close"><a href="#" id="payment-tool-tip-close" title="Cerrar">Cerrar</a></div>
-                                        <div class="tool-tip-content"><img src="../bootstrap/assets/images/checkout/cvv.gif" alt="Número de verificación visual de la Tarjeta" title="Número de verificación visual de la Tarjeta"></div>
+                                        <div class="tool-tip-content"><img src="/bootstrap/assets/images/checkout/cvv.gif" alt="Número de verificación visual de la Tarjeta" title="Número de verificación visual de la Tarjeta"></div>
                                     </div>
                                     <div class="buttons-set" id="payment-buttons-container">
                                         <p class="back-link"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><small>« </small>Regresar</a></p>
                                         <button type="button" class="button" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><span><span>Continuar</span></span></button>
                                         <span class="please-wait" id="payment-please-wait" >
-                                            <img src="../bootstrap/assets/images/checkout/opc-ajax-loader.gif" alt="Cargando el siguiente paso..." title="Cargando el siguiente paso..." class="v-middle"> Cargando el siguiente paso...    </span>
+                                            <img src="/bootstrap/assets/images/checkout/opc-ajax-loader.gif" alt="Cargando el siguiente paso..." title="Cargando el siguiente paso..." class="v-middle"> Cargando el siguiente paso...    </span>
                                     </div>
                                 </div>
                             </li>
@@ -263,7 +263,7 @@
                                             <p class="back-link"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><small>« </small>Regresar</a></p>
                                             <button type="button" class="button"><span><span>Finalizar</span></span></button>
                                             <span class="please-wait" id="payment-please-wait" >
-                                                <img src="../bootstrap/assets/images/checkout/opc-ajax-loader.gif" alt="Cargando el siguiente paso..." title="Cargando el siguiente paso..." class="v-middle"> Cargando el siguiente paso...    </span>
+                                                <img src="/bootstrap/assets/images/checkout/opc-ajax-loader.gif" alt="Cargando el siguiente paso..." title="Cargando el siguiente paso..." class="v-middle"> Cargando el siguiente paso...    </span>
                                         </div>
                                     </div>
                                 </div>
@@ -299,4 +299,15 @@
                 </div>
             </div>
 	</section>
+
+
+<script>
+    $j(document).ready(function(){
+    $j("#billing-address-select").change(function(){
+        var option=$j(this).val();
+        if (option=== ''){$j("#billing-new-address-form").show()}
+        else {$j("#billing-new-address-form").hide()}
+    });    
+    });
+</script>
 <!--FIN DE SECCION -->

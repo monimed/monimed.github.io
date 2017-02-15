@@ -23,9 +23,10 @@ $red: #e1261c;
 }
 
 
+
 //titles
 @mixin page-title-xs{
-    background: url(../../images/checkout/title.png) no-repeat 0 13px;
+            background: url(/bootstrap/assets/images/checkout/title.png) no-repeat 0 13px;
     background-size: 100% 17%;
     display: block;
     float: none;
