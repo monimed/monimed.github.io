@@ -108,6 +108,75 @@
                                             color: #ddd;
                                     }
                                 }
+                                .sp-methods{
+                                    padding: 15px;
+                                    dt{
+                                        .control{
+                                            width: 50%;
+                                            background: #f5f5f5;
+                                            border-radius: 4px;
+                                            border-radius: 4px;
+                                            padding: 10px 0;
+                                            margin-bottom: 20px;
+                                            input{
+                                                width: 10%;
+                                                float: left;
+                                                margin-left: 15px;
+                                            }
+                                            label{
+                                                width: 85%;
+                                                img{
+                                                    width: 35%;
+                                                    padding: 0px 5px;
+                                                }
+                                                a{
+                                                    color: #999;
+                                                    font-weight: normal;
+                                                    font-size: 12px;
+                                                    cursor: pointer;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    dd{
+                                        ul{
+                                            li{
+                                                &:nth-child(4){
+                                                    .input-box{
+                                                        .v-fix{
+                                                            width: 21%;
+                                                            float: left;
+                                                            margin-right: 20px;
+                                                            select{
+                                                                width: 100%;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            
+                                            .cvv{
+                                                clear: both;
+                                                padding-top: 20px; 
+                                                .input-box{
+                                                    input{
+                                                        width: 10%;
+                                                    }
+                                                    a{
+                                                        color: #999;
+                                                        font-family: 'NescafeSans-Bold', Arial;
+                                                        cursor: pointer;
+                                                        font-size: 20px;
+                                                        padding: 4px 10px;
+                                                        background: #f5f5f5;
+                                                        margin: 10px;
+                                                        border-radius: 4px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
                             }
                             div{
                                 .gift-messages{
@@ -223,6 +292,10 @@
                                     color: #ddd;
                                 }
                             }
+                        }
+                        .tool-tip-content {
+                            margin: 0 auto;
+                            text-align: center;
                         }
                         .tool-tip{
                             padding:15px;

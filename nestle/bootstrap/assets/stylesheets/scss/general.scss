@@ -21,12 +21,26 @@ $red: #e1261c;
     	background: #000000;
     }
 }
+@mixin button_black{
+	background: #000;
+	box-shadow: 0 5px 12px 0 rgba(0,0,0,0.2), 0 1px 1px 0 rgba(0,0,0,0.19);
+	transition: all 500ms ease;
+	border-radius: 8px;
+	color: #fff;
+	border: none;
+	width: 150px;
+	height: 38px;
+    font-size: 1em;
+    &:hover{
+    	background: #ff1703;
+    }
+}
 
 
 
 //titles
 @mixin page-title-xs{
-            background: url(/bootstrap/assets/images/checkout/title.png) no-repeat 0 13px;
+            background: url('../../images/checkout/title.png') no-repeat 0 13px;
     background-size: 100% 17%;
     display: block;
     float: none;
@@ -45,8 +59,9 @@ $red: #e1261c;
         font-size: 18px;
     }
 }
+
 @mixin page-title-lg{
-    background: url(../../images/checkout/title.png) no-repeat 0 13px;
+    background: url('../../images/checkout/title.png') no-repeat 0 13px;
     background-size: 100% 17%;
     display: block;
     float: none;
@@ -64,3 +79,77 @@ $red: #e1261c;
         font-size: 18px;
     }
 }
+
+@mixin enlace_txt_red{
+	position: relative;
+	&:before{
+		content: ' ';
+		width: 0px;
+		height: 2px;
+		display: block;
+		background-color: $red;
+		position: absolute;
+		top: 22px;
+		left: 0;
+		opacity: 0;
+		-webkit-transition: all 500ms;
+		-moz-transition: all 500ms;
+		-ms-transition: all 500ms;
+		-o-transition: all 500ms;
+		transition: all 500ms;
+	}
+	&:hover{
+		text-decoration: none;
+		&:before{
+			content: ' ';
+			width: 50px;
+			height: 2px;
+			display: block;
+			background-color: $red;
+			position: absolute;
+			top: 22px;
+			opacity: 1;
+		}
+	}
+}
+
+@mixin enlace_txt_white{
+	position: relative;
+	&:before{
+		content: ' ';
+		width: 0px;
+		height: 2px;
+		display: block;
+		background-color: white;
+		position: absolute;
+		top: 22px;
+		left: 0;
+		opacity: 0;
+		-webkit-transition: all 500ms;
+		-moz-transition: all 500ms;
+		-ms-transition: all 500ms;
+		-o-transition: all 500ms;
+		transition: all 500ms;
+	}
+	&:hover{
+		text-decoration: none;
+		&:before{
+			content: ' ';
+			width: 50px;
+			height: 2px;
+			display: block;
+			background-color: white;
+			position: absolute;
+			top: 22px;
+			opacity: 1;
+		}
+	}
+}
+
+.enlace_bco{
+	@include enlace_txt_white;
+}
+.enlace_red{
+	@include enlace_txt_white;
+}
+

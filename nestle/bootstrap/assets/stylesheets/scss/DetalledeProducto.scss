@@ -2,8 +2,9 @@
 // Entrepids
 //Hoja de estilos para proyecto demo Nestle. Sección: Detalle de Producto;
 .catalog-category-view{
-	.col-md-12{
+	.container{
 		.page-container{
+			height: 1200px;
 			.breadcrumb{
 				background: none;
 				li{
@@ -118,49 +119,53 @@
 				.stock{
 					color: #00913d;
 				}
-				.quantity{
-					width: 40%;
-					padding: 20px 0;
-					.less{
-						border: 2px solid #e1261c;
-					    height: 34px;
-					    width: 38px;
-					    border-radius: 6px 0 0 6px;
-					    text-align: center;
-					    color: #737373;
-					    position: relative;
-					    float: left;
-					    left: 2px;
-					    font-size: 14pt;
-					}
-					.add{
-						border: 2px solid #e1261c;
-					    height: 34px;
-					    width: 38px;
-					    border-radius: 0px 6px 6px 0px;
-					    text-align: center;
-					    color: #737373;
-					    position: relative;
-					    float: right;
-					    right: 114px;
-					    font-size: 14pt;
 
+				.action-product{
+				border:1px solid;
+				border-color:$red-nescafe;
+				height: 40px;
+				line-height: 40px;
+				border-radius: 3px;
+				text-align: center;
+				padding: 0 12px;
+				color: #666;
+				#spinner{
+					width: 60%;
+					border:none;
+					height: 38px;
+					outline: none;
+					border-right:1px solid;
+					border-left:1px solid;
+					border-color:$red-nescafe;
+					text-align: center;
+					font-size: 18px;
+				}
+				.ui-spinner-button{
+					span{
+						display: none;
 					}
-						input{
-						    border: 2px solid $red;
-						    height: 34px;
-						    width: 50px;
-		    				border-radius: 0px;
-		    				text-align: center;
-		    				color: #737373;
-		    				&:focus{
-		    				outline:0px;
+				}
+				.ui-spinner-down{
+					float: left;
+					&:before{
+						content:'-';
+						font-size: 22px;
+						color: #000;
+						color: #000;
+					}
+				}
+				.ui-spinner-up{
+					float: right;
+					&:before{
+						font-size: 22px;
+						content:'+';
+						color: #000;
+					}
+				}
+			}
 
-		    					}
-							}
-					}
-					button{
-						@include button_red;
+				button{
+					@include button_red;
 						position: relative;
 					    top: 17px;
 					    right: 120px;
@@ -183,6 +188,134 @@
 					.fisrt, .second{
 						font-size: 10pt;
 						color: #737373;
+					}
+				}
+			}
+			.more-prod{
+				ul{
+					li{
+						display: inline-block;
+					    border: 1px solid #ccc;
+					    padding: 10px;
+					    margin: 0;
+					    position: relative;
+					    float: left;
+					    clear: right;
+					}
+					.active{
+						background: #000;
+						border: none;
+						color: #fff;
+						border: 1px solid #000;
+						span{
+							background: url(/media/arrow-info.svg) no-repeat 50% 50%;
+						    position: absolute;
+						    width: 20px;
+						    height: 20px;
+						    top: 30px;
+						    right: 48px;
+						    z-index: 999;
+						}
+					}
+				}
+				.content{
+					border: 1px solid #ccc;
+				    width: 90%;
+				    margin: 0 auto;
+				    top: 0;
+				    padding: 10px;
+				    position: relative;
+				    float: left;
+				    left: 40px;
+				}
+			}
+			.slider{
+				h1{
+					font-size: 12pt;
+				    text-align: center;
+				    background: #fff;
+				    height: 21px;
+				    width: 20%;
+				    top: 31px;
+				    position: relative;
+				    z-index: 999;
+				    margin: 0 auto;
+				}
+				hr{
+					border: 1px solid #e1261c;
+    				width: 50%;				
+				}
+				.carrusel{
+					margin: 0 auto;
+    				width: 100%;
+					.thumbs{
+					display: inline-flex;
+					width: 100%;
+					}
+					.prod{
+						width: 25%;
+						float: left;
+						margin: 0 auto;
+    					text-align: center;
+						.thumb-link{
+							width: 150px;
+						    height: 130px;
+						    overflow: hidden;
+						    padding: 0;
+						    margin: 0 8px;
+						     text-align: center;
+
+						    img{
+						    	width: 50%;
+							    height: auto;
+							    margin: 10px auto;
+							    }
+							}
+							button{
+								@include button_red;
+								left: 18px;
+    							position: relative;
+							}
+							.wish{
+								width: 25px;
+							    height: 25px;
+							    background: url(/media/wish.svg) no-repeat 50% 50%;
+							    position: relative;
+							    float: left;
+							    top: 145px;
+    							left: 28px;
+
+							}
+							.compare{
+
+								width: 25px;
+							    height: 25px;
+							    background: url(/media/compare.svg) no-repeat 50% 50%;
+							    position: relative;
+							    float: right;
+							    top: -56px;
+							    right: 31px;
+							}
+						}
+				.arrow-right{
+					width: 60px;
+				    height: 60px;
+				    background: url(/media/arrow-left.svg) no-repeat 50% 50%;
+				    color: transparent;
+				    top: 140px;
+				    left: -50px;
+				    background-size: 70%;
+				    position: absolute;
+
+				}
+				.arrow-left{
+					width: 60px;
+				    height: 60px;
+				    background: url(/media/arrow-right.svg) no-repeat 50% 50%;
+				    color: transparent;
+				    background-size: 70%;
+				    position: absolute;
+				    top: 140px;
 					}
 				}
 			}

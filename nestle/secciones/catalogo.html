@@ -1,14 +1,11 @@
-	<link rel="stylesheet" type="text/css" href="../bootstrap/assets/stylesheets/css/styles.css">
-	<link rel=stylesheet href="../bootstrap/assets/stylesheets/bootstrap.css" type="text/css"/>
-	<script src="../js/jquery.js"></script>
-	<script src="../js/jquery-ui.min.js"></script>
-	<link rel="import" href="home.html">
-	
-	<body>	
-	<div class="container">
-		<section class="tabSolucion col-xs-12">
+<script type="text/javascript">
+	catalogoInit();
+</script>
+<div class="container">
+	<section class="tabSolucion col-xs-12">
 
-			<div id="tabs">
+		<div id="tabs">
+			<div class="header-options">
 				<ul class="options">
 					<li class="active">
 						<a href="#tabs-1">Habitación</a>
@@ -17,142 +14,440 @@
 						<a href="#tabs-2">Restaurante</a>
 					</li>
 
-
 				</ul>
 				<div class="gradientDiv2"></div>
-				<div id="tabs-1">
-					<div id="accordion" class="menuTab col-xs-3">
-						<h3>Filtrar por:</h3>
-						<div>
-							<ul class="filter-list">
-								<li>Café</li>
-								<li>Máquinas</li>
-								<li>Accesorios</li>
-								<li>Servicios</li>
-							</ul>
-						</div>
-						<h3>Número de habitaciones</h3>
-						<div>
-
-							<div class="quatity-bar">
-								<label>1 habitación</label>
-								<label class="right">200 habitaciones</label>
-								<div class="select-bar" id="slider">
-									<div id="custom-handle" class="ui-slider-handle"></div>
-								</div>
-								<div class="coffee-bean">
-									<img src="../bootstrap/assets/images/solucion/coffee-bean.png">
-								</div>
-								<div class="coffee-bean right">
-									<img src="../bootstrap/assets/images/solucion/coffee-bean-2.png">
-								</div>
-							</div>	
-						</div>
-						<h3>Marca</h3>
-						<div>
-							<ul class="filter-list">
-								<li>Nescafé</li>
-								<li>Nescafé Dolce Gusto</li>
-								<li>Nescafé Milano</li>
-								<li>Nescafé Alegria</li>
-							</ul>
-						</div>
-						<h3>Precio</h3>
-						<div>
-							<ul class="filter-list">
-								<li>0 - $599.00</li>
-								<li>$600.00 - $1,099.00</li>
-								<li>$2,000.00 - $10,000.000</li>
-								<li>+ $10,000.00</li>
-								<li>Renta de equipo</li>
-							</ul>
-						</div>
+			</div>
+			
+			<div id="tabs-1">
+				<div id="accordion" class="menuTab col-xs-3">
+					<h3>Filtrar por</h3>
+					<div>
+						<ul class="filter-list animated fadeIn">
+							<li>Café</li>
+							<li>Máquinas</li>
+							<li>Accesorios</li>
+							<li>Servicios</li>
+						</ul>
 					</div>
-					<div class="catalog col-xs-9">
-						<div class="page-title">
-							<span>
-								<p>Solución para mi negocio</p>
-								<p>Hotel habitación</p>
-							</span>
-							<div class="red-line"></div>
-						</div>
-						<!-- BOTONES -->
-						<div class="toolCenter">
-							<button type="button" class="btn btn-red">
-								Agregar al carrito
-							</button>
-							<button type="button" class="btn btn-black">
-								Ver siguiente solución
-							</button>
-						</div>
-						<!-- PRODUCTOS	-->
-						<div class="product">
-							<div class="picture col-xs-4"></div>
-							<div class="product-info col-xs-4">
-								<div class="sku-product">sku</div>
-								<div class="name-product">Melody 3</div>
-								<div class="price-product">
-									<span>$1,700.00</span>
-									<p>$1,350.00</p>
-								</div>
-							</div>
-							<div class="action-product col-xs-2"><br><br>
+					<h3>Número de habitaciones</h3>
+					<div>
 
-								<input id="spinner" name="value" class="spinner">
-								<div class="btn-wish"></div>
-								<div class="label">
-									<img src="#">
-								</div>
+						<div class="quatity-bar">
+							<label>1 habitación</label>
+							<label class="right">200 habitaciones</label>
+							<div class="select-bar" id="slider">
+								<div id="custom-handle" class="ui-slider-handle"></div>
 							</div>
-							
-						</div>
+							<div class="coffee-bean">
+								<img src="../bootstrap/assets/images/solucion/coffee-bean.png">
+							</div>
+							<div class="coffee-bean right">
+								<img src="../bootstrap/assets/images/solucion/coffee-bean-2.png">
+							</div>
+						</div>	
+					</div>
+					<h3>Marca</h3>
+					<div>
+						<ul class="filter-list animated fadeIn">
+							<li>Nescafé</li>
+							<li>Nescafé Dolce Gusto</li>
+							<li>Nescafé Milano</li>
+							<li>Nescafé Alegria</li>
+						</ul>
+					</div>
+					<h3>Precio</h3>
+					<div>
+						<ul class="filter-list animated fadeIn">
+							<li>0 - $599.00</li>
+							<li>$600.00 - $1,099.00</li>
+							<li>$2,000.00 - $10,000.000</li>
+							<li>+ $10,000.00</li>
+							<li>Renta de equipo</li>
+						</ul>
 					</div>
 				</div>
-				<div id="tabs-2">
-					<p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
-				</div>
+				<div class="catalog col-xs-8">
+					<div class="page-title">
+						<span>
+							<p>Solución para mi negocio</p>
+							<p>Hotel habitación</p>
+						</span>
+						<div class="red-line"></div>
+					</div>
+					<!-- BOTONES -->
+					<div class="toolCenter">
+						<button type="button" class="btn btn-red">
+							Agregar al carrito
+						</button>
+						<button type="button" class="btn btn-black">
+							Ver siguiente solución
+						</button>
+					</div>
+					<!-- FILTROS POSICIÓN -->
+					<div class="filter-position">
+						<label>Ordenar por</label>
+						<span>
+							<select>
+								<option value="Precio">Precio</option>
+							</select>
+						</span>
+						<label>Artículos por página</label>
+						<span>
+							<select>
+								<option value="Precio">4</option>
+							</select>
+						</span>
+					</div>
 
+					<!-- PRODUCTO 1	-->
+					<div class="product" id="12208487">
+						<div class="picture col-xs-4 animated flipInY">
+							<img src="../bootstrap/assets/images/solucion/12208487.jpg">
+						</div>
+						<div class="product-info col-xs-4">
+							<div class="sku-product">SKU. 12208487</div>
+							<div class="name-product">MELODY 3 ROJA - MANUAL</div>
+							<div class="price-product">
+								<span>$1,700.00</span>
+								<p>$1,350.00</p>
+							</div>
+						</div>
+						<div class="action-product col-xs-2">
+							<input name="value" class="spinner">
+							<div class="btn-extras">
+								<div class="icon wishlist left">
+									<i class="glyphicon-heart-empty" aria-hidden="true"></i>
+								</div>
+								<div class="icon compare right">
+									<i class="glyphicon-stats" aria-hidden="true"></i>
+								</div>
+							</div>
+
+						</div>
+						<div class="label">
+							<img src="../bootstrap/assets/images/solucion/star-label.png">
+						</div>	
+					</div>
+					<!-- PRODUCTO 2	-->
+					<div class="product" id="1000131805">
+						<div class="picture col-xs-4 animated flipInY">
+							<img src="../bootstrap/assets/images/solucion/1000131805.jpg">
+						</div>
+						<div class="product-info col-xs-4">
+							<div class="sku-product">SKU. 1000131805</div>
+							<div class="name-product">CAFÉ AMERICANO</div>
+							<div class="price-product">
+								<span>$140.00</span>
+								<p>$124.00</p>
+							</div>
+						</div>
+						<div class="action-product col-xs-2">
+							<input name="value" class="spinner">
+							<div class="btn-extras">
+								<div class="icon wishlist left">
+									<i class="glyphicon-heart-empty" aria-hidden="true"></i>
+								</div>
+								<div class="icon compare right">
+									<i class="glyphicon-stats" aria-hidden="true"></i>
+								</div>
+							</div>
+
+						</div>
+						<div class="label">
+							<img src="../bootstrap/assets/images/solucion/star-label.png">
+						</div>	
+					</div>
+					<!-- PRODUCTO 3	-->
+					<div class="product" id="1000024568">
+						<div class="picture col-xs-4 animated flipInY">
+							<img src="../bootstrap/assets/images/solucion/1000024568.jpg">
+						</div>
+						<div class="product-info col-xs-4">
+							<div class="sku-product">SKU. 1000024568</div>
+							<div class="name-product">LATTE MACCHIATO</div>
+							<div class="price-product">
+								<p>$129.00</p>
+							</div>
+						</div>
+						<div class="action-product col-xs-2">
+							<input name="value" class="spinner">
+							<div class="btn-extras">
+								<div class="icon wishlist left">
+									<i class="glyphicon-heart-empty" aria-hidden="true"></i>
+								</div>
+								<div class="icon compare right">
+									<i class="glyphicon-stats" aria-hidden="true"></i>
+								</div>
+							</div>
+
+						</div>
+						<div class="label">
+							<img src="../bootstrap/assets/images/solucion/star-label.png">
+						</div>	
+					</div>
+					<!-- PRODUCTO 4	-->
+					<div class="product" id="1000154731">
+						<div class="picture col-xs-4">
+							<img src="../bootstrap/assets/images/solucion/1000154731.jpg">
+						</div>
+						<div class="product-info col-xs-4">
+							<div class="sku-product">SKU. 1000154731
+							</div>
+							<div class="name-product">ESPRESSO 30 PACK</div>
+							<div class="price-product">
+								<p>$185.50</p>
+							</div>
+						</div>
+						<div class="action-product col-xs-2">
+							<input name="value" class="spinner">
+							<div class="btn-extras">
+								<div class="icon wishlist left">
+									<i class="glyphicon-heart-empty" aria-hidden="true"></i>
+								</div>
+								<div class="icon compare right">
+									<i class="glyphicon-stats" aria-hidden="true"></i>
+								</div>
+							</div>
+
+						</div>
+						<div class="label">
+							<img src="../bootstrap/assets/images/solucion/star-label.png">
+						</div>	
+					</div>
+					<div class="toolCenter last-btn">
+						<span class="verMas">
+							<a href="catalogo.html">Ver más</a>
+							<i class="glyphicon glyphicon-menu-down" aria-hidden="true"></i>
+						</span>
+						
+						<button type="button" class="btn btn-red">
+							Agregar al carrito
+						</button>
+						<button type="button" class="btn btn-black">
+							Ver siguiente solución
+						</button>
+					</div>
+				</div>
+			</div>
+			<div id="tabs-2">
+				<div id="accordionRes" class="menuTab col-xs-3">
+					<h3>Filtrar por</h3>
+					<div>
+						<ul class="filter-list animated fadeIn">
+							<li>Café</li>
+							<li>Máquinas</li>
+							<li>Accesorios</li>
+							<li>Servicios</li>
+						</ul>
+					</div>
+					<h3>Número de tazas</h3>
+					<div class="animated fadeIn">
+
+						<div class="quatity-bar">
+							<label>1 taza</label>
+							<label class="right">200 tazas</label>
+							<div class="select-bar" id="sliderRes">
+								<div id="custom-handle-res" class="ui-slider-handle"></div>
+							</div>
+							<div class="coffee-bean">
+								<img src="../bootstrap/assets/images/solucion/cup.png">
+							</div>
+							<div class="coffee-bean right">
+								<img src="../bootstrap/assets/images/solucion/cup-2.png">
+							</div>
+						</div>	
+					</div>
+					<h3>Marca</h3>
+					<div>
+						<ul class="filter-list animated fadeIn">
+							<li>Nescafé</li>
+							<li>Nescafé Dolce Gusto</li>
+							<li>Nescafé Milano</li>
+							<li>Nescafé Alegria</li>
+						</ul>
+					</div>
+					<h3>Precio</h3>
+					<div>
+						<ul class="filter-list animated fadeIn">
+							<li>0 - $599.00</li>
+							<li>$600.00 - $1,099.00</li>
+							<li>$2,000.00 - $10,000.000</li>
+							<li>+ $10,000.00</li>
+							<li>Renta de equipo</li>
+						</ul>
+					</div>
+				</div>
+				<div class="catalog col-xs-8">
+					<div class="page-title">
+						<span>
+							<p>Solución para mi negocio</p>
+							<p>Hotel habitación</p>
+						</span>
+						<div class="red-line"></div>
+					</div>
+					<!-- BOTONES -->
+					<div class="toolCenter">
+						<button type="button" class="btn btn-red">
+							Agregar al carrito
+						</button>
+						<button type="button" class="btn btn-black">
+							Ver solución anterior
+						</button>
+					</div>
+					<!-- FILTROS POSICIÓN -->
+					<div class="filter-position">
+						<label>Ordenar por</label>
+						<span>
+							<select>
+								<option value="Precio">Precio</option>
+							</select>
+						</span>
+						<label>Artículos por página</label>
+						<span>
+							<select>
+								<option value="Precio">4</option>
+							</select>
+						</span>
+					</div>
+
+					<!-- PRODUCTO 1	-->
+					<div class="product" id="140746">
+						<div class="picture col-xs-4 animated flipInY">
+							<img src="../bootstrap/assets/images/solucion/140746.jpg">
+						</div>
+						<div class="product-info col-xs-4">
+							<div class="sku-product">SKU. 140746</div>
+							<div class="name-product">NESCAFÉ MILANO</div>
+							<div class="price-product">
+								<span>$0,000.00</span>
+								<p>$0,000.00</p>
+							</div>
+						</div>
+						<div class="action-product col-xs-2">
+							<input name="value" class="spinner">
+							<div class="btn-extras">
+								<div class="icon wishlist left">
+									<i class="glyphicon-heart-empty" aria-hidden="true"></i>
+								</div>
+								<div class="icon compare right">
+									<i class="glyphicon-stats" aria-hidden="true"></i>
+								</div>
+							</div>
+
+						</div>
+						<div class="label">
+							<img src="../bootstrap/assets/images/solucion/star-label.png">
+						</div>	
+					</div>
+					<!-- PRODUCTO 2	-->
+					<div class="product" id="140749">
+						<div class="picture col-xs-4">
+							<img src="../bootstrap/assets/images/solucion/140749.jpg">
+						</div>
+						<div class="product-info col-xs-4">
+							<div class="sku-product">SKU. 140749
+							</div>
+							<div class="name-product">NESCAFÉ MILANO EXPRESSO, 10 x 250g</div>
+							<div class="price-product">
+								<p>$185.50</p>
+							</div>
+						</div>
+						<div class="action-product col-xs-2">
+							<input name="value" class="spinner">
+							<div class="btn-extras">
+								<div class="icon wishlist left">
+									<i class="glyphicon-heart-empty" aria-hidden="true"></i>
+								</div>
+								<div class="icon compare right">
+									<i class="glyphicon-stats" aria-hidden="true"></i>
+								</div>
+							</div>
+
+						</div>
+						<div class="label">
+							<img src="../bootstrap/assets/images/solucion/star-label.png">
+						</div>	
+					</div>
+					
+					<!-- PRODUCTO 3	-->
+					<div class="product" id="140747">
+						<div class="picture col-xs-4 animated flipInY">
+							<img src="../bootstrap/assets/images/solucion/140747.jpg">
+						</div>
+						<div class="product-info col-xs-4">
+							<div class="sku-product">SKU. 140747</div>
+							<div class="name-product">TAZA NESCAFÉ MILANO</div>
+							<div class="price-product">
+								<span>$140.00</span>
+								<p>$124.00</p>
+							</div>
+						</div>
+						<div class="action-product col-xs-2">
+							<input name="value" class="spinner">
+							<div class="btn-extras">
+								<div class="icon wishlist left">
+									<i class="glyphicon-heart-empty" aria-hidden="true"></i>
+								</div>
+								<div class="icon compare right">
+									<i class="glyphicon-stats" aria-hidden="true"></i>
+								</div>
+							</div>
+
+						</div>
+						<div class="label">
+							<img src="../bootstrap/assets/images/solucion/star-label.png">
+						</div>	
+					</div>
+					<!-- PRODUCTO 4	-->
+					
+					<div class="product" id="140748">
+						<div class="picture col-xs-4 animated flipInY">
+							<img src="../bootstrap/assets/images/solucion/140748.jpg">
+						</div>
+						<div class="product-info col-xs-4">
+							<div class="sku-product">SKU. 140748</div>
+							<div class="name-product">TAZA NESCAFÉ MILANO</div>
+							<div class="price-product">
+								<p>$129.00</p>
+							</div>
+						</div>
+						<div class="action-product col-xs-2">
+							<input name="value" class="spinner">
+							<div class="btn-extras">
+								<div class="icon wishlist left">
+									<i class="glyphicon-heart-empty" aria-hidden="true"></i>
+								</div>
+								<div class="icon compare right">
+									<i class="glyphicon-stats" aria-hidden="true"></i>
+								</div>
+							</div>
+
+						</div>
+						<div class="label">
+							<img src="../bootstrap/assets/images/solucion/star-label.png">
+						</div>	
+					</div>
+					<div class="toolCenter last-btn">
+						<span class="verMas">
+							<a href="catalogo.html">Ver más</a>
+							<i class="glyphicon glyphicon-menu-down" aria-hidden="true"></i>
+						</span>
+						
+						<button type="button" class="btn btn-red">
+							Agregar al carrito
+						</button>
+						<button type="button" class="btn btn-black">
+							Ver solución anterior
+						</button>
+					</div>
+				</div>
 			</div>
 
+		</div>
 
-		</section>
+
+	</section>
+
 </div>
-		<script type="text/javascript">
-			$(document).ready (function(){
-				$( function() {
-					$( "#tabs" ).tabs();
-					$( "#accordion" ).accordion();
-				// SLIDE NUM DE HABITACIONES
-				$( "#slider" ).slider();
-				var handle = $( "#custom-handle" );
-				$( "#slider" ).slider({
-					create: function() {
-						handle.text( $( this ).slider( "value" ) );
-					},
-					slide: function( event, ui ) {
-						handle.text( ui.value );
-					}
-				});
-				// SELECT NUM DE PRODUCTOS
-				var spinner = $( "#spinner" ).spinner();
 
-				$( "#disable" ).on( "click", function() {
-					if ( spinner.spinner( "option", "disabled" ) ) {
-						spinner.spinner( "enable" );
-					} else {
-						spinner.spinner( "disable" );
-					}
-				});
-				$( "#destroy" ).on( "click", function() {
-					if ( spinner.spinner( "instance" ) ) {
-						spinner.spinner( "destroy" );
-					} else {
-						spinner.spinner();
-					}
-				});
-
-			});
-			});
-		</script>
-	</body>
 

@@ -12,6 +12,12 @@ header{
 		left: 90px;
 	}
 	.header1{
+		.enlace{
+			@include enlace_txt_red;
+		}
+		.enlace_bco{
+			@include enlace_txt_white;
+		}
 		height: 60px;
 		background:black;
 		color: white;
@@ -243,8 +249,10 @@ header{
     					}
     				}
     				&.list-checkbox{
-    					top: 13px;
-    					position: absolute;
+					    top: -13px;
+					    position: absolute;
+					    background: white;
+					    color: black;
     					&:before{
     						display: none;
     					}

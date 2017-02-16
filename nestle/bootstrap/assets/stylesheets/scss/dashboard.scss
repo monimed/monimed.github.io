@@ -1,0 +1,36 @@
+
+//Estilos Dashboard
+.banner{
+    img{
+        width: 100%;
+    }
+}
+
+.container{
+    .dash-container{
+        .pedidos, .credito, .suscripcion, .factura{
+            width: 24%;
+            float: left;
+            text-align: center;
+            margin: 0 auto;
+            a{
+                cursor:pointer;
+                text-decoration: none;
+                &:hover{
+                    opacity: 0.6;
+                }
+                img{
+                    width: 33%;
+                }
+                span{
+                    display: block;
+                    color: $red;
+                    font-family: 'NescafeSans-Bold', Arial;
+                    font-size: 16px;
+                    font-weight: normal;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}

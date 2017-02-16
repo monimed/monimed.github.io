@@ -136,7 +136,7 @@ var validator = {
 var checkout = {
 
     addToCart: function(id, qty){
-
+        
         //$.removeCookie('cart');
         var content = $('#' +  id).html();
         var cart = checkout.getCart();
@@ -149,9 +149,8 @@ var checkout = {
         }
 
         checkout.setCart(cart);
-        checkout.refreshCart();
 
-        //console.log(cart);
+        console.log(cart);
     },
 
     getCart: function(){
@@ -168,95 +167,12 @@ var checkout = {
     setCart: function(cart){
         var newCart = JSON.stringify(cart);
         $.cookie('cart', newCart);
-    },
-
-    getCartItemCount: function(){
-        var cart = checkout.getCart().cartitems;
-        var howmany = 0;
-        for(key in cart){
-           howmany += parseInt(cart[key].qty);
-        }
-        return howmany;
-    },
-
-    refreshCart: function(){
-        var howmany = checkout.getCartItemCount();
-        $('#cart-qty').html("<a href='#'>" + howmany + "</a>");
-    },
-
-    getMainData: function(){
-
-        var ubicaciones = {
-
-            restaurante: {
-                terraza: {
-                    dolcegusto: ["123", "234"],
-                    testerchoice: ["345", "567", "123"],
-                    Milano: ["987", "765", "224"],
-                    alegria: ["789", "123", "123"]
-                },
-                cafeteria: {
-                    Milano: ["987", "765", "224"],
-                    alegria: ["789", "123", "123"]
-                }
-            },
-            hotel: {
-                habitaciones: {
-                    dolcegusto: ["123", "234"],
-                    testerchoice: ["345", "567", "123"]
-                },
-                cafeteria: {
-                    Milano: ["987", "765", "224"],
-                    alegria: ["789", "123", "123"]
-                },
-                alberca: {
-                    Milano: ["987", "765", "224"]
-                }
-            },
-            centrosdeeducacion: {
-                salamaestros: {
-                    dolcegusto: ["123", "234"],
-                    testerchoice: ["345", "567", "123"]
-                },
-                biblioteca: {
-                    alegria: ["789", "123", "123"]
-
-                }
-            }
-
-        };
-
-        return ubicaciones;
-
-    },
-    getNegocios: function(){
-        var data = checkout.getMainData();
-        return utils.getSolucionKeys(data);
-    },
-    getUbicaciones: function(negocios){
-        var data = checkout.getMainData()[negocios];
-        return utils.getSolucionKeys(data);
-    },
-    getSoluciones: function(negocios, ubicaciones){
-        var data = checkout.getMainData()[negocios][ubicaciones];
-        return utils.getSolucionKeys(data);
-    },
-    getProductos: function(negocios, ubicaciones, soluciones){
-        return checkout.getMainData()[negocios][ubicaciones][soluciones];
     }
 
 }
 
 var utils = {
 
-    getSolucionKeys: function(obj){
-
-        var res = [];
-        for(key in obj){
-            res.push(key);
-        }
-        return res;
-    },
     getParameterByName: function(name){
 
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
@@ -319,26 +235,14 @@ var utils = {
 
 }
 
-function loadSection(seccion, params){
+function loadSection(seccion){
 
-    ajaxData('secciones/' + seccion,'GET',params,false,function(e){
+    ajaxData('secciones/' + seccion,'GET',{},false,function(e){
         $('#main-section-placeholder').html(e);
     })
     
 }
 
-
-
-function homeInit(){
-
-    $(document).ready(function(){
-        $(".checkbox").click(function(){
-            $(this).parent().find('label').toggleClass('ui-checkboxradio-checked');
-
-        });
-    });
-
-}
 
 function catalogoInit(){
 
@@ -346,10 +250,22 @@ function catalogoInit(){
     /*SCRIPT DE DIANA*/
     $("#tabs").tabs();
     $("#accordion").accordion();
+    $("#accordionRes").accordion();
     // SLIDE NUM DE HABITACIONES
     $("#slider").slider();
     var handle = $("#custom-handle");
     $("#slider").slider({
+        create: function () {
+            handle.text($(this).slider("value"));
+        },
+        slide: function (event, ui) {
+            handle.text(ui.value);
+        }
+    });
+    // SLIDE NUM DE RESTAURANTE
+    $("#sliderRes").slider();
+    var handle = $("#custom-handle-res");
+    $("#sliderRes").slider({
         create: function () {
             handle.text($(this).slider("value"));
         },
@@ -391,24 +307,5 @@ function catalogoInit(){
     });
 
 }
-// DASHHBOARD
-function dashInit(){
-        $("#tabsDash").tabs();
-            // SELECT NUM DE PRODUCTOS
-    var spinner = $(".spinner").spinner();
 
-    $("#disable").on("click", function () {
-        if (spinner.spinner("option", "disabled")) {
-            spinner.spinner("enable");
-        } else {
-            spinner.spinner("disable");
-        }
-    });
-    $("#destroy").on("click", function () {
-        if (spinner.spinner("instance")) {
-            spinner.spinner("destroy");
-        } else {
-            spinner.spinner();
-        }
-    });
-}
+

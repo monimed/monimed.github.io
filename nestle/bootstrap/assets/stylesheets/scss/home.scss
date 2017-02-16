@@ -1,5 +1,226 @@
-.header1{
-	background:black;
-	color: white;
-}
 
+.home{
+	h3{
+		@include page-title-lg;
+		margin-top: 50px;
+	}
+	.continue{
+		@include button_red;
+		margin-top: 50px;
+	}
+	.checkbox-label{
+	    font-weight: normal;
+        padding: .4em 1em;
+	    display: inline-block;
+	    position: relative;
+	    line-height: normal;
+	    margin-right: .1em;
+	    cursor: pointer;
+	    vertical-align: middle;
+	    text-align: center;
+	    -webkit-user-select: none;
+	    -moz-user-select: none;
+	    -ms-user-select: none;
+	    user-select: none;
+	    overflow: visible;
+	    color: black;
+	    font-family: 'NescafeSans-Bold';
+	    &:after{
+			content: " ";
+			background-image: url('../../images/home/sprite2.png');
+		    width: 153px;
+		    height: 11px;
+		    background-position: 0px 0px;
+		    display: block;
+		    background-repeat: no-repeat;
+		}
+	    &:active, &.ui-checkboxradio-checked{
+	    	&:after{
+				content: " ";
+				background-image: url('../../images/home/sprite2.png');
+			    width: 153px;
+			    height: 11px;
+			    background-position: 0px -11px;
+			    display: block;
+			    background-repeat: no-repeat;
+			}
+		    & span.room{
+		    	background-image: url('../../images/home/sprite.png');
+	    	    width: 88px;
+			    height: 86px;
+			    background-size: 1000px;
+		        background-position: 0px -107px;
+		        display: block;
+	            margin: 0 auto;
+		    }
+		    & span.restaurant{
+		    	background-image: url('../../images/home/sprite.png');
+    	    width: 88px;
+		    height: 86px;
+		    background-size: 1000px;
+	        background-position: -150px -107px;
+	        display: block;
+	        margin: 0 auto;
+		    }
+		    & span.meeting{
+		    	background-image: url('../../images/home/sprite.png');
+    	    width: 88px;
+		    height: 86px;
+		    background-size: 1000px;
+	        background-position: -302px 89px;
+	        display: block;
+	        margin: 0 auto;
+		    }
+		    & span.pool{
+		    	background-image: url('../../images/home/sprite.png');
+    	    width: 88px;
+		    height: 86px;
+		    background-size: 898px;
+	        background-position: -405px -96px;
+	        display: block;
+	        margin: 0 auto;
+	        background-repeat: no-repeat;
+		    }
+		    & span.bar{
+		    	background-image: url('../../images/home/sprite.png');
+    	    width: 88px;
+		    height: 86px;
+		    background-size: 972px;
+	        background-position: -588px 87px;
+	        display: block;
+	        margin: 0 auto;
+		    }
+		    & span.dining{
+		    	background-image: url('../../images/home/sprite.png');
+	        width: 117px;
+		    height: 86px;
+		    background-size: 868px;
+		    background-position: -635px -93px;
+		    display: block;
+		    margin: 0 auto;
+		    background-repeat: no-repeat;
+		    }
+		    & span.office{
+		    	background-image: url('../../images/home/sprite.png');
+	        width: 104px;
+		    height: 86px;
+		    background-size: 903px;
+		    background-position: -806px -96px;
+		    display: block;
+		    margin: 0 auto;
+		    background-repeat: no-repeat;
+		    }
+	    }
+	    & span.room{
+	    	background-image: url('../../images/home/sprite.png');
+    	    width: 88px;
+		    height: 86px;
+		    background-size: 1000px;
+		    background-position: 0px 0px;
+		    display: block;
+		    margin: 0 auto;
+	    }
+	    & span.restaurant{
+	    	background-image: url('../../images/home/sprite.png');
+    	    width: 88px;
+		    height: 86px;
+		    background-size: 1000px;
+	        background-position: -150px 0px;
+	        display: block;
+	        margin: 0 auto;
+	    }
+	    & span.meeting{
+	    	background-image: url('../../images/home/sprite.png');
+    	    width: 88px;
+		    height: 86px;
+		    background-size: 1000px;
+	        background-position: -302px 0px;
+	        display: block;
+	        margin: 0 auto;
+	    }
+	    & span.pool{
+	    	background-image: url('../../images/home/sprite.png');
+    	    width: 88px;
+		    height: 86px;
+		    background-size: 898px;
+	        background-position: -405px 0px;
+	        display: block;
+	        margin: 0 auto;
+	    }
+	    & span.bar{
+	    	background-image: url('../../images/home/sprite.png');
+    	    width: 88px;
+		    height: 86px;
+		    background-size: 972px;
+	        background-position: -588px 0px;
+	        display: block;
+	        margin: 0 auto;
+	    }
+	    & span.dining{
+	    	background-image: url('../../images/home/sprite.png');
+	        width: 117px;
+		    height: 86px;
+		    background-size: 868px;
+		    background-position: -635px 0px;
+		    display: block;
+		    margin: 0 auto;
+	    }
+	    & span.office{
+	    	background-image: url('../../images/home/sprite.png');
+	        width: 104px;
+		    height: 86px;
+		    background-size: 903px;
+		    background-position: -806px 0px;
+		    display: block;
+		    margin: 0 auto;
+		    background-repeat: no-repeat;
+	    }
+	}
+	.checkbox{
+	    border: 0;
+	    clip: rect(0 0 0 0);
+	    height: 1px;
+	    margin: -1px;
+	    overflow: hidden;
+	    padding: 0;
+	    position: absolute;
+	    width: 1px;
+	}
+	.home1{
+		margin: 50px 0;
+	}
+
+	.calculator{
+		background-color: black;
+		padding: 30px 0;
+		color: white;
+		margin: 30px 0;
+		.calc{
+			line-height: 45px;
+			font-weight: bold;
+			font-size: 18px;
+			&:before{
+				content: " ";
+				background-image: url('../../images/home/cup.png');
+				display: inline-block;
+			    width: 41px;
+    			height: 45px;
+    			background-repeat: no-repeat;
+    			vertical-align: middle;
+			    margin-right: 20px;
+			}
+		}
+	}
+	.btn-red-bg{
+		background: #ff1703;
+		transition: all 500ms ease;
+		border-radius: 8px;
+		color: #fff;
+		border: none;
+		width: 150px;
+		height: 38px;
+	    font-size: 1em;
+	    margin: 0 30px;
+	}
+
+}

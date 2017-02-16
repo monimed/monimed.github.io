@@ -1,44 +1,48 @@
-	<link rel="stylesheet" type="text/css" href="../bootstrap/assets/stylesheets/css/styles.css">
-	<link rel=stylesheet href="../bootstrap/assets/stylesheets/bootstrap.css" type="text/css"/>
-	<script src="../js/jquery.js"></script>
-	<link rel="import" href="home.html">
-	<!--INICIO DE SECCION -->
-	<body>
-	<!--  -->
-	<div class="container">
+<script type="text/javascript">
+    catalogoInit();
+</script>
+<!--INICIO DE SECCION -->
+<div class="container">
 	<section class="solutionMain col-xs-12">
-	<!-- solución habitación -->
-		<div class="solutionsTop">
-		<div class="titleSolution">
-			<i class="glyphicon glyphicon-triangle-right" aria-hidden="true"></i>
-			<p>HABITACIÓN</p>
+		<!-- solución habitación -->
+		<div class="page-title">
+			<span>
+				<p>Nosotros te recomendamos</p>
+			</span>
+			<div class="red-line"></div>
 		</div>
+		<div class="solutionsTop">
+			<div class="titleSolution">
+				<i class="glyphicon glyphicon-record" aria-hidden="true"></i>
+				<p>HABITACIÓN</p>
+			</div>
 			<div class="col-xs-3 facts">
-					<div class="producto"></div>
-					<table>
-						<tr>
-							<th>Costo por taza</th>
-						</tr>
-						<tr>
-							<th class="white-back">Preparación</th>
-						</tr>
-						<tr>
-							<th>Tipo de bebida</th>
-						</tr>
-						<tr>
-							<th class="white-back">Variedades</th>
-						</tr>
-					</table>
+				<div class="producto"></div>
+				<div class="gradientDiv"></div>
+				<table>
+					<tr>
+						<th>Costo por taza</th>
+					</tr>
+					<tr>
+						<th class="white-back">Preparación</th>
+					</tr>
+					<tr>
+						<th>Tipo de bebida</th>
+					</tr>
+					<tr>
+						<th class="white-back">Variedades</th>
+					</tr>
+				</table>
 			</div>
 			<div class="col-xs-3 border-hover" id="selectProd">
-			<div id="solucionSelected">
-				<i class="glyphicon glyphicon-ok" aria-hidden="true"></i>
-			</div>
-				<div class="producto">
-				<div class="logo">
-					<img src="../bootstrap/assets/images/solucion/logo-dolce.jpg">
+				<div id="solucionSelected">
+					<i class="glyphicon glyphicon-ok" aria-hidden="true"></i>
 				</div>
-					<img src="../bootstrap/assets/images/solucion/producto-dolce.jpg">
+				<div class="producto animated fadeInUp">
+					<div class="logo">
+						<img src="/bootstrap/assets/images/solucion/logo-dolce.png">
+					</div>
+					<img src="/bootstrap/assets/images/solucion/producto-dolce.jpg">
 
 				</div>
 				<table>
@@ -53,27 +57,29 @@
 					</tr>
 					<tr>
 						<th class="white-back">
-							<a href="#" id="cap">24</a>
+						<div id="cap"></div>
+							<a href="#">24</a>
 						</th>
 					</tr>
 				</table>
-				
+
+				<div class="overlay-prod over-dolce"></div>
 				<div id="variedades">
 					<a href="#">
-						<img src="../bootstrap/assets/images/solucion/capsulas.jpg">
+						<img src="/bootstrap/assets/images/solucion/capsulas.jpg">
 					</a>
-					
+
 				</div>
 				<div class="gradientDiv"></div>
 			</div>
-			
+
 			<div class="col-xs-3 border-hover">
-				<div class="producto">
+				<div class="producto animated fadeInUp">
 					<div class="logo">
-						<img src="../bootstrap/assets/images/solucion/logo-nescafe.jpg">
+						<img src="/bootstrap/assets/images/solucion/logo-nescafe.jpg">
 					</div>
-					<img src="../bootstrap/assets/images/solucion/producto-stick.jpg">
-				
+					<img src="/bootstrap/assets/images/solucion/producto-stick.jpg">
+
 				</div>
 				<table>
 					<tr>
@@ -91,77 +97,83 @@
 						</th>
 					</tr>
 				</table>
+
+				<div class="overlay-prod over-stick"></div>
 				<div class="gradientDiv"></div>
 			</div>
-			
+
 			<div class="col-xs-3 border-hover">
-				<div class="producto">
+				<div class="producto animated fadeInUp">
+					<div class="gradientDiv"></div>
 					<div class="logo">
-						<img src="../bootstrap/assets/images/solucion/logo-tasters.jpg">
+						<img src="/bootstrap/assets/images/solucion/logo-tasters.jpg">
 					</div>
-					<img src="../bootstrap/assets/images/solucion/producto-tasters.jpg">
-					
+					<img src="/bootstrap/assets/images/solucion/producto-tasters.jpg">
+
 				</div>
 				<table>
-						<tr>
-							<th>$ 1.00 - $ 2.00</th>
-						</tr>
-						<tr>
-							<th class="white-back">Soluble</th>
-						</tr>
-						<tr>
-							<th>Café</th>
-						</tr>
-						<tr>
-							<th class="white-back">
-								<a href=#"">5</a>
-							</th>
-						</tr>
-					</table>
+					<tr>
+						<th>$ 1.00 - $ 2.00</th>
+					</tr>
+					<tr>
+						<th class="white-back">Soluble</th>
+					</tr>
+					<tr>
+						<th>Café</th>
+					</tr>
+					<tr>
+						<th class="white-back">
+							<a href=#"">5</a>
+						</th>
+					</tr>
+				</table>
+
+				<div class="overlay-prod over-taster"></div>
 			</div>
 		</div>
 		<div class="toolNav toolRight col-xs-12">
 			<a href="#">Ver más opciones</a>
 			<i class="glyphicon glyphicon-menu-right" aria-hidden="true"></i>
 		</div>
-		<div class="division"></div>
+		<div class="gradientDiv2"></div>
 		<!-- solución restaurante -->
-			<div class="solutionsTop">
+		<div class="solutionsTop">
 			<div class="titleSolution">
-				<i class="glyphicon glyphicon-triangle-right" aria-hidden="true"></i>
+				<i class="glyphicon glyphicon-record" aria-hidden="true"></i>
 				<p>RESTAURANTE</p>
-				
+
 			</div>
 			<div class="col-xs-3 facts">
-					<div class="producto"></div>
-					<table>
-						<tr>
-							<th>Costo por taza</th>
-						</tr>
-						<tr>
-							<th class="white-back">Taza por min.</th>
-						</tr>
-						<tr>
-							<th>¿Requiere contrato?</th>
-						</tr>
-						<tr>
-							<th class="white-back">Capacidad de tanque</th>
-						</tr>
-						<tr>
-							<th>Variedades</th>
-						</tr>
-						<tr>
-							<th class="white-back">Tipo de bebidas</th>
-						</tr>
-					</table>
+				<div class="producto "></div>
+				<div class="gradientDiv"></div>
+				<table>
+					<tr>
+						<th>Costo por taza</th>
+					</tr>
+					<tr>
+						<th class="white-back">Taza por min.</th>
+					</tr>
+					<tr>
+						<th>¿Requiere contrato?</th>
+					</tr>
+					<tr>
+						<th class="white-back">Capacidad de tanque</th>
+					</tr>
+					<tr>
+						<th>Variedades</th>
+					</tr>
+					<tr>
+						<th class="white-back">Tipo de bebidas</th>
+					</tr>
+				</table>
 			</div>
 			<div class="col-xs-3 border-hover">
-				<div class="producto">
-				<div class="logo">
-					<img src="../bootstrap/assets/images/solucion/logo-dolce.jpg">
-				</div>
-					
-					<img src="../bootstrap/assets/images/solucion/producto-dolce-2.jpg">
+				<div class="producto animated fadeInUp">
+					<div class="logo">
+						<img src="/bootstrap/assets/images/solucion/logo-dolce.jpg">
+					</div>
+
+					<img src="/bootstrap/assets/images/solucion/producto-dolce-2.jpg">
 				</div>
 				<table>
 					<tr>
@@ -183,18 +195,20 @@
 						<th class="white-back">Café, té y chocolates</th>
 					</tr>
 				</table>
+
+				<div class="overlay-prod over-dolce"></div>
 				<div class="gradientDiv"></div>
 			</div>
-			
+
 			<div class="col-xs-3 border-hover" id="selectProdMilano">
-			<div id="solucionSelectedMilano">
-				<i class="glyphicon glyphicon-ok" aria-hidden="true"></i>
-			</div>
-				<div class="producto">
+				<div id="solucionSelectedMilano">
+					<i class="glyphicon glyphicon-ok" aria-hidden="true"></i>
+				</div>
+				<div class="producto animated fadeInUp">
 					<div class="logo">
-						<img src="../bootstrap/assets/images/solucion/logo-milano.jpg">
+						<img src="/bootstrap/assets/images/solucion/logo-milano.jpg">
 					</div>
-					<img id="milano" src="../bootstrap/assets/images/solucion/producto-milano.jpg">
+					<img id="milano" src="/bootstrap/assets/images/solucion/producto-milano.jpg">
 				</div>
 				<table>
 					<tr>
@@ -216,40 +230,40 @@
 						<th class="white-back">Café y chocolates</th>
 					</tr>
 				</table>
-				<div class="overlayProd">
-					
-				</div>
+				<div class="overlay-prod over-milano"></div>
 				<div class="gradientDiv"></div>
 			</div>
-			
+
 			<div class="col-xs-3 border-hover">
-				<div class="producto">
+				<div class="producto animated fadeInUp">
+					<div class="gradientDiv"></div>
 					<div class="logo">
-						<img src="../bootstrap/assets/images/solucion/logo-alegria.jpg">
+						<img src="/bootstrap/assets/images/solucion/logo-alegria.png">
 					</div>
-					<img src="../bootstrap/assets/images/solucion/producto-alegria.jpg">
-					
+					<img src="/bootstrap/assets/images/solucion/producto-alegria.jpg">
+
 				</div>
 				<table>
-						<tr>
-							<th>$ 1.00 - $ 4.70</th>
-						</tr>
-						<tr>
-							<th class="white-back">2</th>
-						</tr>
-						<tr>
-							<th>Comodato</th>
-						</tr>
-						<tr>
-							<th class="white-back">7.5 L</th>
-						</tr>
-						<tr>
-							<th>8</th>
-						</tr>
-						<tr>
-							<th class="white-back">Café y chocolates</th>
-						</tr>
-					</table>
+					<tr>
+						<th>$ 1.00 - $ 4.70</th>
+					</tr>
+					<tr>
+						<th class="white-back">2</th>
+					</tr>
+					<tr>
+						<th>Comodato</th>
+					</tr>
+					<tr>
+						<th class="white-back">7.5 L</th>
+					</tr>
+					<tr>
+						<th>8</th>
+					</tr>
+					<tr>
+						<th class="white-back">Café y chocolates</th>
+					</tr>
+				</table>
+				<div class="overlay-prod over-alegria"></div>
 			</div>
 		</div>
 		<div class="toolNav toolRight col-xs-12">
@@ -257,33 +271,17 @@
 			<i class="glyphicon glyphicon-menu-right" aria-hidden="true"></i>
 
 		</div>
-		<div class="division "></div>
+		<div class="gradientDiv2"></div>
 		<div class="toolCenter col-xs-12">
 			<button type="button" class="btn">
-	    SIGUIENTE
-	  	</button>
+				SIGUIENTE
+			</button>
 		</div>
-		
+
 
 	</section>
-	</div>
-	<script type="text/javascript">
-	$(document).ready(function(){
+</div>
 
-	    $('#cap').mouseover(function(){
-	        $('#variedades').css('display', 'block');
-	    });
-	    $('#cap').mouseout(function(){
-	        $('#variedades').css('display', 'none');
-	    });
-	    $('#selectProd').click(function() {
-	  		$('#solucionSelected').addClass('overlay');
-		});
-	    $('#selectProdMilano').click(function() {
-	  		$('#solucionSelectedMilano').addClass('overlay');
-		});
-	});
-	</script>
-	</body>
 
-	<!--FIN DE SECCION -->
+
+<!--FIN DE SECCION -->

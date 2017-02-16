@@ -1,0 +1,289 @@
+<script type="text/javascript">
+    dashInit();
+</script>
+<section class="dashboard">
+    <!--Banner-->
+    <div class="banner">
+        <img src="bootstrap/assets/images/dashboard/banner.jpg" alt="Banner" class="banner">
+    </div>
+    <!-- COMPARADOR -->
+
+    <div class="solutionsTop">
+        <div class="titleSolution">
+            <i class="glyphicon glyphicon-record" aria-hidden="true"></i>
+            <p>HABITACIÓN</p>
+        </div>
+        <div class="col-xs-3 facts">
+            <div class="producto"></div>
+            <div class="gradientDiv"></div>
+            <table>
+                <tr>
+                    <th>Costo por taza</th>
+                </tr>
+                <tr>
+                    <th class="white-back">Preparación</th>
+                </tr>
+                <tr>
+                    <th>Tipo de bebida</th>
+                </tr>
+                <tr>
+                    <th class="white-back">Variedades</th>
+                </tr>
+            </table>
+        </div>
+        <div class="col-xs-3 border-hover" id="selectProd">
+            <div id="solucionSelected">
+                <i class="glyphicon glyphicon-ok" aria-hidden="true"></i>
+            </div>
+            <div class="producto animated fadeInUp">
+                <div class="logo">
+                    <img src="/bootstrap/assets/images/solucion/logo-dolce.png">
+                </div>
+                <img src="/bootstrap/assets/images/solucion/producto-dolce.jpg">
+
+            </div>
+            <table>
+                <tr>
+                    <th>$8.00 - $16.00</th>
+                </tr>
+                <tr>
+                    <th class="white-back">Cápsulas</th>
+                </tr>
+                <tr>
+                    <th>Café, té y chocolate</th>
+                </tr>
+                <tr>
+                    <th class="white-back">
+                        <div id="cap"></div>
+                        <a href="#">24</a>
+                    </th>
+                </tr>
+            </table>
+
+            <div class="overlay-prod over-dolce"></div>
+            <div id="variedades">
+                <a href="#">
+                    <img src="/bootstrap/assets/images/solucion/capsulas.jpg">
+                </a>
+
+            </div>
+            <div class="gradientDiv"></div>
+        </div>
+
+        <div class="col-xs-3 border-hover">
+            <div class="producto animated fadeInUp">
+                <div class="logo">
+                    <img src="/bootstrap/assets/images/solucion/logo-nescafe.jpg">
+                </div>
+                <img src="/bootstrap/assets/images/solucion/producto-stick.jpg">
+
+            </div>
+            <table>
+                <tr>
+                    <th>$ 1.30</th>
+                </tr>
+                <tr>
+                    <th class="white-back">Soluble</th>
+                </tr>
+                <tr>
+                    <th>Café</th>
+                </tr>
+                <tr>
+                    <th class="white-back">
+                        <a href="#">2</a>
+                    </th>
+                </tr>
+            </table>
+
+            <div class="overlay-prod over-stick"></div>
+            <div class="gradientDiv"></div>
+        </div>
+
+        <div class="col-xs-3 border-hover">
+            <div class="producto animated fadeInUp">
+                <div class="gradientDiv"></div>
+                <div class="logo">
+                    <img src="/bootstrap/assets/images/solucion/logo-tasters.jpg">
+                </div>
+                <img src="/bootstrap/assets/images/solucion/producto-tasters.jpg">
+
+            </div>
+            <table>
+                <tr>
+                    <th>$ 1.00 - $ 2.00</th>
+                </tr>
+                <tr>
+                    <th class="white-back">Soluble</th>
+                </tr>
+                <tr>
+                    <th>Café</th>
+                </tr>
+                <tr>
+                    <th class="white-back">
+                        <a href=#"">5</a>
+                    </th>
+                </tr>
+            </table>
+
+            <div class="overlay-prod over-taster"></div>
+        </div>
+    </div>
+    <div class="toolNav toolRight col-xs-12">
+        <a href="#">Ver más opciones</a>
+        <i class="glyphicon glyphicon-menu-right" aria-hidden="true"></i>
+    </div>
+    <div class="gradientDiv2"></div>
+
+    <div class="container animated fadeinDown">
+        <!--Dashboard-->
+        <div class="dash-container">
+            <div class="pedidos">
+                <a>
+                    <img src="bootstrap/assets/images/dashboard/pedidos.png" alt="Banner" class="banner">
+                    <span>Últimos pedidos</span>
+                </a>
+            </div>
+            <div class="credito">
+                <a>
+                    <img src="bootstrap/assets/images/dashboard/credito.png" alt="Banner" class="banner">
+                    <span>Crédito disponibles</span>
+                </a>
+            </div>
+            <div class="suscripcion">
+                <a>
+                    <img src="bootstrap/assets/images/dashboard/suscripciones.png" alt="Banner" class="banner">
+                    <span>Plan de suscripción</span>
+                </a>
+            </div>
+            <div class="factura">
+                <a>
+                    <img src="bootstrap/assets/images/dashboard/factura.png" alt="Banner" class="banner">
+                    <span>Factura</span>
+                </a>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+    <!-- SECCIÓN DE RECOMPRA -->
+    <div class="page-title">
+        <span>
+            <p>Recompra</p>
+        </span>
+        <div class="red-line"></div>
+    </div>
+    <!-- TABS DE SOLUCIONES -->
+    <div id="tabsDash">
+            <div class="header-options">
+                <ul class="options">
+                    <li class="active">
+                        <a href="#tabs-1">Habitación</a>
+                    </li>
+                    <li>
+                        <a href="#tabs-2">Restaurante</a>
+                    </li>
+
+                </ul>
+                <div class="gradientDiv2"></div>
+            </div>
+            
+            <div id="tabs-1">
+            <!-- PRODUCTO 1 -->
+            <div class="col-sm-6 productDash">
+                 <div class="product" id="12208487">
+                        <div class="picture col-xs-4 animated flipInY">
+                            <img src="../bootstrap/assets/images/solucion/12208487.jpg">
+                        </div>
+                        <div class="product-info col-xs-4">
+                            <div class="sku-product">SKU. 12208487</div>
+                            <div class="name-product">MELODY 3 ROJA - MANUAL</div>
+                            <div class="price-product">
+                                <span>$1,700.00</span>
+                                <p>$1,350.00</p>
+                            </div>
+                        </div>
+                        <div class="action-product col-xs-2">
+                            <input name="value" class="spinner">
+                           
+
+                        </div>
+                    </div>
+            </div>
+             <!-- PRODUCTO 2 -->
+            <div class="col-sm-6 productDash">
+                 <div class="product" id="12208487">
+                        <div class="picture col-xs-4 animated flipInY">
+                            <img src="../bootstrap/assets/images/solucion/12208487.jpg">
+                        </div>
+                        <div class="product-info col-xs-4">
+                            <div class="sku-product">SKU. 12208487</div>
+                            <div class="name-product">MELODY 3 ROJA - MANUAL</div>
+                            <div class="price-product">
+                                <span>$1,700.00</span>
+                                <p>$1,350.00</p>
+                            </div>
+                        </div>
+                        <div class="action-product col-xs-2">
+                            <input name="value" class="spinner">
+
+                        </div>
+                    </div>
+            </div>
+                   
+            </div>
+            <div id="tabs-2">
+               <!-- PRODUCTO 1 -->
+            <div class="col-sm-6 productDash">
+                 <div class="product" id="12208487">
+                        <div class="picture col-xs-4 animated flipInY">
+                            <img src="../bootstrap/assets/images/solucion/12208487.jpg">
+                        </div>
+                        <div class="product-info col-xs-4">
+                            <div class="sku-product">SKU. 12208487</div>
+                            <div class="name-product">MELODY 3 ROJA - MANUAL</div>
+                            <div class="price-product">
+                                <span>$1,700.00</span>
+                                <p>$1,350.00</p>
+                            </div>
+                        </div>
+                        <div class="action-product col-xs-2">
+                            <input name="value" class="spinner">
+                           
+
+                        </div> 
+                    </div>
+            </div>
+             <!-- PRODUCTO 2 -->
+            <div class="col-sm-6 productDash">
+                 <div class="product" id="12208487">
+                        <div class="picture col-xs-4 animated flipInY">
+                            <img src="../bootstrap/assets/images/solucion/12208487.jpg">
+                        </div>
+                        <div class="product-info col-xs-4">
+                            <div class="sku-product">SKU. 12208487</div>
+                            <div class="name-product">MELODY 3 ROJA - MANUAL</div>
+                            <div class="price-product">
+                                <span>$1,700.00</span>
+                                <p>$1,350.00</p>
+                            </div>
+                        </div>
+                        <div class="action-product col-xs-2">
+                            <input name="value" class="spinner">
+                           
+
+                        </div>
+                    </div>
+            </div>
+            </div>
+             <div class="toolCenter">
+                        <button type="button" class="btn btn-red">
+                            Agregar al carrito
+                        </button>
+                        <button type="button" class="btn btn-black">
+                            Ver siguiente solución
+                        </button>
+                    </div>
+
+    </div>
+
+</section>
+<!--FIN DE SECCION 

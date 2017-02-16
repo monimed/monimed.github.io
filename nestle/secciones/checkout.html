@@ -28,7 +28,7 @@
                                                         </select>
                                                     </div>
                                                 </li>
-                                                <li id="billing-new-address-form" class="scaffold-form" style="display: none;">
+                                                <li id="billing-new-address-form" class="scaffold-form">
                                                     <div class="fieldset">
                                                         <input name="billing[address_id]" value="31" id="billing:address_id" type="hidden">
                                                         <ul>
@@ -78,9 +78,41 @@
                                                                     <label class="required"><em style="">*</em>Estado/Provincia</label>
                                                                     <div class="input-box">
                                                                         <select  title="Estado/Provincia" class="validate-select required-entry" >
-                                                                            <option value="">Por favor seleccione la región, estado o provincia</option>
+                                                                            <option value="">Por favor seleccione estado o provincia</option>
+                                                                            <option value=”Aguascalientes”>Aguascalientes</option>
+                                                                            <option value=”Baja California “>Baja California </option>
+                                                                            <option value=”Baja California Sur “>Baja California Sur </option>
+                                                                            <option value=”Campeche “>Campeche </option>
+                                                                            <option value=”Chiapas “>Chiapas </option>
+                                                                            <option value=”Chihuahua “>Chihuahua </option>
+                                                                            <option value=”Coahuila “>Coahuila </option>
+                                                                            <option value=”Colima “>Colima </option>
+                                                                            <option value=”Distrito Federal”>Distrito Federal</option>
+                                                                            <option value=”Durango “>Durango </option>
+                                                                            <option value=”Estado de México “>Estado de México </option>
+                                                                            <option value=”Guanajuato “>Guanajuato </option>
+                                                                            <option value=”Guerrero “>Guerrero </option>
+                                                                            <option value=”Hidalgo “>Hidalgo </option>
+                                                                            <option value=”Jalisco “>Jalisco </option>
+                                                                            <option value=”Michoacán “>Michoacán </option>
+                                                                            <option value=”Morelos “>Morelos </option>
+                                                                            <option value=”Nayarit “>Nayarit </option>
+                                                                            <option value=”Nuevo León “>Nuevo León </option>
+                                                                            <option value=”Oaxaca “>Oaxaca </option>
+                                                                            <option value=”Puebla “>Puebla </option>
+                                                                            <option value=”Querétaro “>Querétaro </option>
+                                                                            <option value=”Quintana Roo “>Quintana Roo </option>
+                                                                            <option value=”San Luis Potosí “>San Luis Potosí </option>
+                                                                            <option value=”Sinaloa “>Sinaloa </option>
+                                                                            <option value=”Sonora “>Sonora </option>
+                                                                            <option value=”Tabasco “>Tabasco </option>
+                                                                            <option value=”Tamaulipas “>Tamaulipas </option>
+                                                                            <option value=”Tlaxcala “>Tlaxcala </option>
+                                                                            <option value=”Veracruz “>Veracruz </option>
+                                                                            <option value=”Yucatán “>Yucatán </option>
+                                                                            <option value=”Zacatecas”>Zacatecas</option>
                                                                         </select>
-                                                                        <input id="billing:region" name="billing[region]" value="Distrito Federal" title="Estado/Provincia" class="input-text required-entry" style="" type="text">
+                                                                        <!--<input id="billing:region" name="billing[region]" value="Distrito Federal" title="Estado/Provincia" class="input-text required-entry" style="" type="text">-->
                                                                     </div>
                                                                 </div>
                                                             </li>
@@ -135,7 +167,7 @@
                                             <div class="buttons-set" id="billing-buttons-container">
                                                 <button type="button" title="Continuar" class="button" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><span><span>Continuar</span></span></button>
                                                 <span class="please-wait" id="billing-please-wait" >
-                                                    <img src="/bootstrap/assets/images/checkout/opc-ajax-loader.gif" alt="Cargando el siguiente paso..." title="Cargando el siguiente paso..." class="v-middle"> Cargando el siguiente paso...</span>
+                                                    <img src="bootstrap/assets/images/checkout/opc-ajax-loader.gif" alt="Cargando el siguiente paso..." title="Cargando el siguiente paso..." class="v-middle"> Cargando el siguiente paso...</span>
                                             </div>
                                         </div>
                                     </form>
@@ -174,7 +206,7 @@
                                                             <li class="item">
                                                                 <div class="product-img-box">
                                                                     <p class="product-image">
-                                                                        <img src="/bootstrap/assets/images/checkout/melody3.jpg" alt="Cafetera" title="CAfetera" width="75" height="75">
+                                                                        <img src="bootstrap/assets/images/checkout/melody3.jpg" alt="Cafetera" title="CAfetera" width="75" height="75">
                                                                     </p>
                                                                     <p class="number">Artículo 1 de 1</p>
                                                                 </div>
@@ -216,7 +248,7 @@
                                             <p class="back-link"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><small>« </small>Regresar</a></p>
                                             <button type="button" class="button" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><span><span>Continuar</span></span></button>
                                             <span id="shipping-method-please-wait" class="please-wait" >
-                                                <img src="/bootstrap/assets/images/checkout/opc-ajax-loader.gif" alt="Cargando el siguiente paso..." title="Cargando el siguiente paso..." class="v-middle"> 
+                                                <img src="bootstrap/assets/images/checkout/opc-ajax-loader.gif" alt="Cargando el siguiente paso..." title="Cargando el siguiente paso..." class="v-middle"> 
                                                 Cargando el siguiente paso...        
                                             </span>
                                         </div>
@@ -233,20 +265,121 @@
                                 <div id="collapseThree" class="panel-collapse collapse step a-item" role="tabpanel" aria-labelledby="headingThree">
                                     <form action="" id="co-payment-form">
                                         <div class="panel-body fieldset">
-                                            <dl class="sp-methods" id="checkout-payment-method-load">
-                                                <!-- Content dynamically loaded. Content from the methods.phtml is loaded during the ajax call -->
-                                            </dl>
+                                            <div class="sp-methods" id="checkout-payment-method-load">
+                                                <dt id="dt_method_paypal_express">
+                                                    <!-- Mercado Pago -->
+                                                    <div class="control">
+                                                        <input id="p_method_paypal_express" value="mercado-pago"  class="radio" autocomplete="off" type="radio">
+                                                        <label for="p_method_mercado_pago"> <!-- MercadoPago Logo -->
+                                                            <img src="bootstrap/assets/images/checkout/mercadopago.png" class="v-middle" alt="Acceptance Mark">&nbsp;
+                                                            <a href="https://www.mercadopago.com.mx/?gclid=Cj0KEQiAuJXFBRDirIGnpZLE-N4BEiQAqV0KGnhBop5EkvgO66fMifLpgxWFTyxmMjST3mSvcZChG5YaArkJ8P8HAQ">¿Qué es MercadoPago?</a>
+                                                        </label>
+                                                    </div>
+                                                </dt>
+                                                <dt id="dt_method_ccsave">
+                                                    <div class="control">
+                                                        <input id="p_method_ccsave" value="ccsave" name="payment[method]" title="Credit Card (saved)" class="radio" autocomplete="off" type="radio">
+                                                        <label for="p_method_ccsave">Tarjeta de Credito</label>
+                                                    </div>
+                                                </dt>
+                                                <dd id="dd_method_ccsave">
+                                                    <ul class="form-list" id="payment_form_ccsave" style="">
+                                                        <li>
+                                                            <p class="required">* Campos Requeridos</p>
+                                                            <label for="ccsave_cc_owner" class="required"><em>*</em>Titular de la tarjeta</label>
+                                                            <div class="input-box">
+                                                                <input title="Titular de la tarjeta" class="input-text required-entry" id="ccsave_cc_owner" name="payment[cc_owner]" value="" autocomplete="off" type="text">
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <label for="ccsave_cc_type" class="required"><em>*</em>Tipo de tarjeta de crédito</label>
+                                                            <div class="input-box">
+                                                                <select id="ccsave_cc_type" name="payment[cc_type]" title="Tipo de tarjeta de crédito" class="required-entry validate-cc-type-select" autocomplete="off">
+                                                                    <option value="">--Seleccionar Por Favor--</option>
+                                                                    <option value="AE">American Express</option>
+                                                                    <option value="VI">Visa</option>
+                                                                    <option value="MC">MasterCard</option>
+                                                                    <option value="DI">Discover</option>
+                                                                </select>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <label for="ccsave_cc_number" class="required"><em>*</em>Número de Tarjeta de Crédito</label>
+                                                            <div class="input-box">
+                                                                <input pattern="\d*" id="ccsave_cc_number" name="payment[cc_number]" title="Número de Tarjeta de Crédito" class="input-text validate-cc-number validate-cc-type" value="" autocomplete="off" type="text">
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <label for="ccsave_expiration" class="required"><em>*</em>Fecha de Vencimiento</label>
+                                                            <div class="input-box">
+                                                                <div class="v-fix">
+                                                                    <select id="ccsave_expiration" name="payment[cc_exp_month]" class="month validate-cc-exp required-entry" autocomplete="off">
+                                                                        <option value="" selected="selected">Mes</option>
+                                                                        <option value="1">01 - enero</option>
+                                                                        <option value="2">02 - febrero</option>
+                                                                        <option value="3">03 - marzo</option>
+                                                                        <option value="4">04 - abril</option>
+                                                                        <option value="5">05 - mayo</option>
+                                                                        <option value="6">06 - junio</option>
+                                                                        <option value="7">07 - julio</option>
+                                                                        <option value="8">08 - agosto</option>
+                                                                        <option value="9">09 - septiembre</option>
+                                                                        <option value="10">10 - octubre</option>
+                                                                        <option value="11">11 - noviembre</option>
+                                                                        <option value="12">12 - diciembre</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="v-fix">
+                                                                    <select id="ccsave_expiration_yr" name="payment[cc_exp_year]" class="year required-entry" autocomplete="off">
+                                                                        <option value="" selected="selected">Año</option>
+                                                                        <option value="2017">2017</option>
+                                                                        <option value="2018">2018</option>
+                                                                        <option value="2019">2019</option>
+                                                                        <option value="2020">2020</option>
+                                                                        <option value="2021">2021</option>
+                                                                        <option value="2022">2022</option>
+                                                                        <option value="2023">2023</option>
+                                                                        <option value="2024">2024</option>
+                                                                        <option value="2025">2025</option>
+                                                                        <option value="2026">2026</option>
+                                                                        <option value="2027">2027</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="cvv">
+                                                            <label for="ccsave_cc_number" class="required"><em>*</em>Número CVV</label>
+                                                            <div class="input-box">
+                                                                <input pattern="\d*" id="ccsave_cc_number" name="payment[cc_number]" title="Número de Tarjeta de Crédito" class="input-text validate-cc-number validate-cc-type" value="" autocomplete="off" type="password">
+                                                                <a data-toggle="modal" data-target="#ModalCvv">?</a>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </dd>
+
+                                            </div>
                                         </div>
                                     </form>
-                                    <div class="tool-tip" id="payment-tool-tip" >
-                                        <div class="btn-close"><a href="#" id="payment-tool-tip-close" title="Cerrar">Cerrar</a></div>
-                                        <div class="tool-tip-content"><img src="/bootstrap/assets/images/checkout/cvv.gif" alt="Número de verificación visual de la Tarjeta" title="Número de verificación visual de la Tarjeta"></div>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="ModalCvv" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                    <h4 class="modal-title" id="myModalLabel">¿Qué es el número CVV?</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="tool-tip-content"><img src="bootstrap/assets/images/checkout/cvv.gif" alt="Número de verificación visual de la Tarjeta" title="Número de verificación visual de la Tarjeta"></div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
+                                    
                                     <div class="buttons-set" id="payment-buttons-container">
                                         <p class="back-link"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><small>« </small>Regresar</a></p>
                                         <button type="button" class="button" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><span><span>Continuar</span></span></button>
                                         <span class="please-wait" id="payment-please-wait" >
-                                            <img src="/bootstrap/assets/images/checkout/opc-ajax-loader.gif" alt="Cargando el siguiente paso..." title="Cargando el siguiente paso..." class="v-middle"> Cargando el siguiente paso...    </span>
+                                            <img src="bootstrap/assets/images/checkout/opc-ajax-loader.gif" alt="Cargando el siguiente paso..." title="Cargando el siguiente paso..." class="v-middle"> Cargando el siguiente paso...    </span>
                                     </div>
                                 </div>
                             </li>
@@ -263,7 +396,7 @@
                                             <p class="back-link"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><small>« </small>Regresar</a></p>
                                             <button type="button" class="button"><span><span>Finalizar</span></span></button>
                                             <span class="please-wait" id="payment-please-wait" >
-                                                <img src="/bootstrap/assets/images/checkout/opc-ajax-loader.gif" alt="Cargando el siguiente paso..." title="Cargando el siguiente paso..." class="v-middle"> Cargando el siguiente paso...    </span>
+                                                <img src="bootstrap/assets/images/checkout/opc-ajax-loader.gif" alt="Cargando el siguiente paso..." title="Cargando el siguiente paso..." class="v-middle"> Cargando el siguiente paso...    </span>
                                         </div>
                                     </div>
                                 </div>
@@ -301,7 +434,7 @@
 	</section>
 
 
-<script>
+<!--<script>
     $j(document).ready(function(){
     $j("#billing-address-select").change(function(){
         var option=$j(this).val();
@@ -309,5 +442,5 @@
         else {$j("#billing-new-address-form").hide()}
     });    
     });
-</script>
+</script>-->
 <!--FIN DE SECCION -->

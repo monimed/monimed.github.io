@@ -1,11 +1,12 @@
 
 $white-color: #fff;
 $red-nescafe: #e1261c;
-.border-hover{
-	&:hover{
-		border:1px solid #999;
+.solutionMain , .dashboard{
+	.gradientDiv2{
+		margin: 0 0 5% 0;
+		height: 3px;
 	}
-
+	
 }
 .solutionsTop{
 	width: 100%;
@@ -49,9 +50,32 @@ $red-nescafe: #e1261c;
 		color: $red-nescafe;
 	}
 }
-.solutionMain{
-	margin-top: 5%;
+.solutionMain, .dashboard{
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	.page-title{
+		font-family: 'NescafeSans-Bold', Arial;
+		font-size: 18px;
+		text-align: center;
+		width: 60%;
+		margin: 0 auto;
+		margin-top: 5%;
+		height: 80px;
+		span{
+			background:#fff;
+		}	
+		p{
+			color: #000;
+			width: 50%;
+			display: inline-block;
+			margin: 0 auto;
+		}
+		.red-line{
+			width: 100%;
+			height: 2px;
+			background:$red-nescafe;
+			margin-top: -2%;
+		}
+	}
 	table{
 		width: 100%;
 		border-spacing: 2px;
@@ -93,22 +117,27 @@ $red-nescafe: #e1261c;
 		outline: none;
 		color: #fff;
 		border:none;
-		border-radius: 10px;
+		border-radius: 8px;
 		font-size: 15px;
 		font-family: 'NescafeSans-Bold';
-		box-shadow: 1px 6px 11px #bebebe;
+		transition: all 500ms ease;
+		box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
+		&:hover{
+			background: #000000;
+			color: #fff;
+		}
 	}
 	.titleSolution{
 		position: relative;
 		p{
-			padding-left: 5%;
+			padding: 3px 0 0 6%;
 			font-size: 20px;
 		}
 		i{
 			position: absolute;
 			top: 17%;
 			left: 3%;
-			font-size: 16px;
+			font-size: 25px;
 			color: $red-nescafe;
 		}
 	}
@@ -121,14 +150,15 @@ $red-nescafe: #e1261c;
 		position: absolute;
 		background: #fff;
 		z-index:1;
-		display: none;
 		margin-top: 20px;
 		text-align: center;
+		display: none;
 		a{
 			img{
 				width: 100%;
 			}
 		}
+
 		&:before{
 			content:'';
 			width: 0;
@@ -144,7 +174,7 @@ $red-nescafe: #e1261c;
 	.producto{
 		height: 317px;
 	}
-	.overlayProd{
+	.overlay-prod{
 		position: absolute;
 		top: 0;
 		z-index: 0;
@@ -153,9 +183,9 @@ $red-nescafe: #e1261c;
 		margin-top: 70px;
 		&:hover{
 			background-size: cover;
-			background:url('http://nestle.local.entrepids.com/bootstrap/assets/images/solucion/ubicacion-milano.jpg')no-repeat;
-			background-position: 0px -20px;
+			
 		}	
+		
 		img{
 
 			width: 100%;
@@ -164,6 +194,35 @@ $red-nescafe: #e1261c;
 			margin-top: 23%;
 			box-shadow: 7px 7px 15px #c6c6c6;
 			border:1px solid red;
+		}
+	}
+	.over-milano{
+		&:hover{
+			background:url('http://demo-nestle.local.entrepids.com/bootstrap/assets/images/solucion/ubicacion-milano.jpg');
+
+			background-position: 0px -20px;
+		}
+	}	
+	.over-alegria{
+		&:hover{
+			background:url('http://demo-nestle.local.entrepids.com/bootstrap/assets/images/solucion/ubicacion-alegria.jpg');
+		}
+	}	
+	.over-dolce{
+		&:hover{
+			background:url('http://demo-nestle.local.entrepids.com/bootstrap/assets/images/solucion/ubicacion-dolce.jpg');
+		}
+	}	
+	.over-stick{
+		&:hover{
+			background:url('http://demo-nestle.local.entrepids.com/bootstrap/assets/images/solucion/ubicacion-stick.jpg');
+			background-position: 30% 67%;
+		}
+	}
+	.over-taster{
+		&:hover{
+			background:url('http://demo-nestle.local.entrepids.com/bootstrap/assets/images/solucion/ubicacion-tasters.jpg');
+			background-position: 25% 15%;
 		}
 	}
 }
@@ -175,8 +234,9 @@ $red-nescafe: #e1261c;
 }
 .toolCenter{
 	text-align: center;
-	height: 80px;
-	line-height: 80px;
+}
+.last-btn{
+	margin-bottom: 15%;
 }
 .division{
 	width: 100%;
@@ -242,67 +302,78 @@ $red-nescafe: #e1261c;
 
 /*estilos catálogo*/
 
-.tabSolucion{
-	.options{
-		width: 40%;
-		margin: 0 auto;
-		.ui-state-active a{
-			color: $red-nescafe!important;
-			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,e2e2e2+99&0+0,0.65+100 */
-			background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(226,226,226,0.64) 99%, rgba(226,226,226,0.65) 100%); /* FF3.6-15 */
-			background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(226,226,226,0.64) 99%,rgba(226,226,226,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
-			background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(226,226,226,0.64) 99%,rgba(226,226,226,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6e2e2e2',GradientType=0 ); /* IE6-9 */
+.tabSolucion, .dashboard{
+	margin-top:3%; 
+	.header-options{
+		height: 47px;
+		position: relative;
+		.gradientDiv2{
+			position: absolute;
+		}
+
+		.options{
+			width: 40%;
+			margin: 0 auto;
+			.ui-state-active{
+				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,e2e2e2+99&0+0,0.65+100 */
+				background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(226,226,226,0.64) 99%, rgba(226,226,226,0.65) 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(226,226,226,0.64) 99%,rgba(226,226,226,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(226,226,226,0.64) 99%,rgba(226,226,226,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6e2e2e2',GradientType=0 ); /* IE6-9 */
+				a{
+					text-decoration: none;
+					color: $red-nescafe!important;
+				}
+			}
+			.ui-state-default a{
+				color: gray;
+			}
+			li{
+				outline: none;
+				display: inline-block;
+				width: 49%;
+				border:1px solid #ededed;
+				height: 45px;
+				line-height: 45px;
+				text-align: center;
+				border-radius: 5px 5px 0 0;
+				cursor: pointer;
+				a{
+					font-family: 'NescafeSans-Bold';
+					padding: 6% 32%;
+					outline: none;
+				}
+			}
 
 		}
-		.ui-state-default a{
-			color: gray;
-		}
-		li{
-			outline: none;
-			display: inline-block;
-			width: 49%;
-			border:1px solid #ededed;
-			height: 45px;
-			line-height: 45px;
-			text-align: center;
-			border-radius: 5px 5px 0 0;
-			cursor: pointer;
-			a{
-				font-family: 'NescafeSans-Bold';
-				padding: 6% 32%;
-				outline: none;
-			}
-		}
-		
 	}
 
 	/*estilos menu lateral*/
 	.select-bar{
 		position: relative;
 		width: 100%;
-	    height: 10px;
-	    background: red;
-	    border-radius: 10px;
-	    margin: 5% 0;
-		#custom-handle {
+		height: 10px;
+		background: red;
+		border-radius: 10px;
+		margin: 5% 0 8% 0;;
+		#custom-handle, #custom-handle-res {
 			width: 30px;
-    		height: 30px;
-    		line-height: 30px;
-		    top: 50%;
-		    margin-top: -5%;
-		    text-align: center;
-		    position: absolute;
-		    background: #000;
-		    border-radius: 25px;
-		    color: #fff;
-		    &:after{
-		    	display:none;
-		    }
-	  }
-
+			height: 30px;
+			line-height: 30px;
+			top: 50%;
+			margin-top: -5%;
+			text-align: center;
+			position: absolute;
+			background: #000;
+			border-radius: 25px;
+			color: #fff;
+			&:after{
+				display:none;
+			}
+		}
 	}
-	.catalog{
+	.catalog, .productDash{
+		float: right;
 		.page-title{
 			font-family: 'NescafeSans-Bold', Arial;
 			font-size: 18px;
@@ -310,6 +381,7 @@ $red-nescafe: #e1261c;
 			width: 80%;
 			margin: 0 auto;
 			margin-top: 5%;
+			height: 80px;
 			span{
 				background:#fff;
 			}	
@@ -326,10 +398,40 @@ $red-nescafe: #e1261c;
 				margin-top: -2%;
 			}
 		}
+		.filter-position{
+			margin: 5% 0 8% 0;
+			text-align: center;
+			select{
+				margin:0 5% 0 1%; 
+				border: 1px solid red;
+				height: 30px;
+				width: 100px;
+				background: #fff;
+				padding-left: 15px;
+				-webkit-appearance:none;
+				-moz-appearance:none;
+
+			}
+			span{
+				position: relative;
+				&:after{
+					font-family: 'Glyphicons Halflings';
+					content:'\e259';
+					font-size: 13px;
+					color: $red-nescafe;
+					position: absolute;
+					right: 33%;
+					top: 2%;
+				}
+			}
+			label{
+				font-weight: normal;
+			}
+		}
 		.toolCenter{
 
 			button{
-				width: 224px;
+				width: 190px;
 				height: 46px;
 				outline: none;
 				color: #fff;
@@ -337,12 +439,33 @@ $red-nescafe: #e1261c;
 				border-radius: 10px;
 				font-size: 15px;
 				box-shadow: 1px 6px 11px #bebebe;
+				margin: 0 5%;
 			}
 			.btn-red{
 				background: $red-nescafe;
+				&:hover{
+					background:black;
+					transition: all 500ms ease;
+					box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
+
+				}
 			}
 			.btn-black{
 				background: #000;
+				&:hover{
+					transition: all 500ms ease;
+					box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
+					background:$red-nescafe;
+				}
+			}
+			.verMas{
+				display: block;
+				margin: 5% 0;
+				a{
+					color: $red-nescafe!important;
+				}
+				i{
+					color: $red-nescafe!important;}
 			}
 		}
 		.red-line{
@@ -355,17 +478,34 @@ $red-nescafe: #e1261c;
 		}
 		/*estilos para listado de producto*/
 		.product{
+			margin: 3% 0;
+			width: 100%;
+			height: 150px;
+			border-bottom: 1px solid #D5D4D5;
+			.picture{
+				text-align: right;
+				max-width: 170px;
+				img{
+					width: 100%!important;
+				}
+			}
+			
 			.product-info{
+				margin-top: 2%;
+				padding-left: 5%;
+				font-size: 16px;
 				.sku-product{
 					color: $red-nescafe;
+					font-size: 14px;
 				}
 				.name-product{
 					font-weight: bold;
-					margin-bottom: 2%;
+					margin-bottom: 6%;
 				}
 				.price-product{
 					span{
 						text-decoration:line-through; 
+						color: #737373;
 					}
 					p{
 						font-weight: bold;
@@ -373,24 +513,30 @@ $red-nescafe: #e1261c;
 				}
 			}
 			.action-product{
+				float: right;
+				margin:5% 18% 0 0;
 				border:1px solid;
 				border-color:$red-nescafe;
-				height: 40px;
-				line-height: 40px;
+				height: 32px;
+				line-height: 32px;
 				border-radius: 3px;
 				text-align: center;
-				padding: 0 12px;
+				padding: 0;
 				color: #666;
-				#spinner{
-					width: 60%;
+				a{
+					width: 24%;
+				}
+				.spinner{
+					width: 50%;
 					border:none;
-					height: 38px;
+					height: 30px;
 					outline: none;
 					border-right:1px solid;
 					border-left:1px solid;
 					border-color:$red-nescafe;
 					text-align: center;
 					font-size: 18px;
+					vertical-align: top;
 				}
 				.ui-spinner-button{
 					span{
@@ -408,12 +554,40 @@ $red-nescafe: #e1261c;
 				}
 				.ui-spinner-up{
 					float: right;
+					padding: 0;
+					height: 30px;
 					&:before{
 						font-size: 22px;
 						content:'+';
 						color: #000;
 					}
 				}
+				.btn-extras{
+					clear: both;
+					width: 100%;
+					.icon{
+						font-family: 'Glyphicons Halflings';
+						display: inline-block;
+						width: 49%;
+						float: left;
+						font-size: 20px;
+						color:#D5D4D5;
+						i{
+							font-style: normal;	
+						}
+					}
+					.left{
+						text-align: left;
+					}
+					.right{
+						text-align: right;
+					}
+				}
+				
+			}
+			.label{
+				position: absolute;
+				right: 0;
 			}
 		}
 	}
@@ -423,7 +597,40 @@ $red-nescafe: #e1261c;
 				list-style: none;
 				color:#737373;
 				line-height: 25px;
+				position: relative;
+				&:before{
+					content: '';
+					width: 0px;
+					height: 2px;
+					display: block;
+					background-color: #e1261c;
+					position: absolute;
+					top: 22px;
+					left: 0;
+					opacity: 0;
+					-webkit-transition: all 500ms;
+					-moz-transition: all 500ms;
+					-ms-transition: all 500ms;
+					-o-transition: all 500ms;
+					transition: all 500ms;
+					
+				}
+				&:hover{
+					&:before{
+						content: ' ';
+						width: 50px;
+						height: 2px;
+						display: block;
+						background-color: #e1261c;
+						position: absolute;
+						top: 22px;
+						opacity: 1;
+					}
+					
+				}
 			}
+
+
 		}
 
 		.right{
@@ -462,15 +669,15 @@ $red-nescafe: #e1261c;
 			background: black;
 		}
 		.coffee-bean{
-			width: 20px;
-			height: 20px;
+			width: 25px;
+			height: 25px;
 			display: inline-block;
 			img{
 				width: 100%;
 			}
 		}
 	}
-	#accordion{
+	#accordion, #accordionRes{
 		h3{
 			outline: none;
 			margin: 10% 0;
@@ -503,9 +710,36 @@ $red-nescafe: #e1261c;
 		label{
 			font-weight: 200;
 		}
+		.ui-accordion-content{
+			min-height: 135px;
+		}
+	}
+	/*DASHBOARD*/
+	.col-sm-6{
+		margin: 0 0 5% 0;
 	}
 }
+.dashboard{
+	.header-options{
+		
 
+		.gradientDiv2{
+			margin-bottom: 0;
+    position: absolute;
+
+
+		}
+	}
+	.toolCenter{
+		margin-bottom: 5%; 
+		.btn-black{
+			background:#000;
+			&:hover{
+				background:$red-nescafe;
+			}
+		}
+	}
+}
 
 
 

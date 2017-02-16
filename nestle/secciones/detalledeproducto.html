@@ -1,45 +1,26 @@
-<!doctype html>
- <html>
-
-   <head>
-      <meta charset="utf-8"/>   
-      <title>Nescafé</title>
-      <link rel=stylesheet href="/bootstrap/assets/stylesheets/css/styles.css" type="text/css"/>
-      <link rel=stylesheet href="/bootstrap/assets/stylesheets/bootstrap.css" type="text/css"/>
-      <link rel=stylesheet href="/css/animate.css" type="text/css"/>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-   </head>
-
-   <body class="catalog-category-view">
-     <div class="col-md-12">
+<div class="catalog-category-view">
+     <div class="container">
        <div class="page-container">
 
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
-
             <li class="breadcrumb-item"><a href="#">Hotel</a></li>
-
             <li class="breadcrumb-item"><a href="#">Habitación</a></li>
-
             <li class="breadcrumb-item active">Detalle de Producto</li>
           </ol>
 
       <div class="content-img col-sm-6">
         <img src="/media/melody-roja.jpg" class="img-fluid" alt="Responsive image">
-
-      <div class="thumbs">
-        <span class="arrow-right"><</span>
-          <a class="thumb-link" href="">
-          <img src="/media/1.jpg"></a>
-
-          <a class="thumb-link" href="">
-          <img src="/media/2.jpg"></a>
-
-          <a class="thumb-link" href="">
-          <img src="/media/3.jpg"></a>
-        <span class="arrow-left">></span>
-      </div>
-
+        <div class="thumbs" id="thumbs-slider" >
+          <span class="arrow-right"><</span>
+            <a class="thumb-link" href="">
+            <img src="/media/1.jpg"></a>
+            <a class="thumb-link" href="">
+            <img src="/media/2.jpg"></a>
+            <a class="thumb-link" href="">
+            <img src="/media/3.jpg"></a>
+          <span class="arrow-left">></span>
+        </div>
       </div>
 
       <div class="info-prod col-sm-6">
@@ -55,13 +36,15 @@
           <li class="new-price">$ 1,395.00</li>
         </ul>
         <p class="stock">Disponible</p>
-          <div class="quantity col-sm-6">
-          <span class="less">-</span>
-            <input type="text" value="50">
-          
-          <span class="add">+</span>
+
+          <div class="action-product col-sm-2">
+            <input id="spinner" name="value" class="spinner">
+            <div class="ui-spinner-up"></div>
+            <div class="ui-spinner-down"></div>
           </div>
+
           <button type="button" class="change-section">Agregar al Carrito</button>
+
         <hr>
         <div class="more col-sm-10">
           <h3>Promociones</h3>
@@ -69,28 +52,95 @@
           <h3>Promociones</h3>
           <p class="second">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor sed do eiusmod tempor ,sed do eiusmod tempor.</p>
         </div>
+        </div>
+        <!--calificaciones-->
+        <div class="more-prod col-sm-12">
+          <ul>
+            <li class="active">Caracteristicas <span class="arrow-info"></span></li>
+            <li>Reseñas</li>
+            <li>Información adicional</li>
+          </ul>
+          <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+
+          <div id="slider-prod" class="slider col-sm-12">
+          <h1>Te puede interesar</h1>
+          <hr>
+          <div id="carrusel-prod" class="carrusel">
+            <span class="arrow-right"><</span>
+
+              <div class="prod">
+                <a class="thumb-link" href="">
+                <img src="/media/1.jpg"></a>
+
+                <span class="wish"></span>
+                <p class="name-prod">Nombre producto</p>
+                <p class="price-prod">$199.00</p>
+                <span class="compare"></span>
+                <button type="button" class="change-section">Ver más</button>
+              </div>
+
+              <div class="prod">
+                <a class="thumb-link" href="">
+                <img src="/media/2.jpg"></a>
+
+                <span class="wish"></span>
+                <p class="name-prod">Nombre producto</p>
+                <p class="price-prod">$199.00</p>
+                <span class="compare"></span>
+                <button type="button" class="change-section">Ver más</button>
+              </div>
+
+              <div class="prod">
+                <a class="thumb-link" href="">
+                <img src="/media/3.jpg"></a>
+                <span class="wish"></span>
+                <p class="name-prod">Nombre producto</p>
+                <p class="price-prod">$199.00</p>
+                <span class="compare"></span>
+                <button type="button" class="change-section">Ver más</button>
+
+              </div>
+
+              <div class="prod">
+              <a class="thumb-link" href="">
+              <img src="/media/3.jpg"></a>
+
+              <span class="wish"></span>
+              <p class="name-prod">Nombre producto</p>
+              <p class="price-prod">$199.00</p>
+              <span class="compare"></span>
+              <button type="button" class="change-section">Ver más</button>
+              </div>
+
+
+            <span class="arrow-left">></span>
+            </div>
+          </div>
+        </div>
       </div>
+  </div>
 
-      </div>
+  // SELECT NUM DE PRODUCTOS
+  <script type="text/javascript">
+        var spinner = $( ".spinner" ).spinner();
 
-    </div>
+        $( "#disable" ).on( "click", function() {
+          if ( spinner.spinner( "option", "disabled" ) ) {
+            spinner.spinner( "enable" );
+          } else {
+            spinner.spinner( "disable" );
+          }
+        });
+        $( "#destroy" ).on( "click", function() {
+          if ( spinner.spinner( "instance" ) ) {
+            spinner.spinner( "destroy" );
+          } else {
+            spinner.spinner();
+          }
+        });
 
-  <footer>
-    
-  </footer>
-
-    <script type="text/javascript" src="js/jquery.js"></script>
-
-    <script type="text/javascript" src="bootstrap/assets/javascripts/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/vistas.js"></script>
-    <script type="text/javascript" src="js/lib.js"></script>
-    <script type="text/javascript" src="js/jquery.ajaxData.js"></script>
-    <script type="text/javascript" src="js/init.js"></script>
-   </body>
-
- </html>   <script type="text/javascript" src="js/lib.js"></script>
-    <script type="text/javascript" src="js/jquery.ajaxData.js"></script>
-    <script type="text/javascript" src="js/init.js"></script>
-   </body>
-
- </html>
+      });
+</script>

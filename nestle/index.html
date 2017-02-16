@@ -17,9 +17,9 @@
         <div class="container">
       		<div class="col-sm-9">
       			<ul>
-      				<li><a href="#">Contacto</a></li>
-      				<li><a href="#">Chat online</a></li>
-              <li>Llámanos: 01800 0164500</li>
+      				<li><a class="enlace" href="#">Contacto</a></li>
+      				<li><a class="enlace" href="#">Chat online</a></li>
+              <li><a class="enlace" href="tel:#">Llámanos: 01800 0164500</a></li>
       			</ul>
       		</div>
 
@@ -31,7 +31,7 @@
                 <li><a href="#">JavaScript</a></li>
               </ul>
             </span>
-            <a href="#" class="new-user">¿Nuevo? Regístate</a>
+            <span><a href="#" class="new-user enlace_bco">¿Nuevo? Regístate</a></span>
           </div>
           </div>
       </div>
@@ -63,7 +63,9 @@
                     <li class="menu-item dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Oficinas</a>
                       <ul class="dropdown-menu list-checkbox">
                           <li class="menu-item ">
-                              <div><input type="checkbox"/><label>ju</label></div>
+                            <form>
+                              <div><input type="checkbox"/><label>Habitación</label></div>
+                            </form>
                           </li>
                       </ul>
                     </li>
@@ -74,9 +76,13 @@
 
               <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown" href="#">Promociones<span class="glyphicon glyphicon-play"></span></a>
                 <ul class="dropdown-menu menu2">
-                    <li><a href="#">HTML</a></li>
-                    <li><a href="#">CSS</a></li>
-                    <li><a href="#">JavaScript</a></li>
+                    <li><div  class="change-section" section="catalogo.html">catalogo</div></li>
+                    <li><div  class="change-section" section="checkout.html">checkout</div></li>
+                    <li><div  class="change-section" section="detalledeproducto.html">detalle</div></li>
+                    <li><div  class="change-section" section="home.html">home</div></li>
+                    <li><div  class="change-section" section="solucion.html">solucion</div></li>
+                    <li><div  class="change-section" section="detalledecarrito.html">carrito</div></li>
+                    <li><div  class="change-section" section="dashboard.html">dashboard</div></li>
                 </ul>
               </li>
 
@@ -172,18 +178,17 @@
       </div>
     </div>
   </div>
-	</footer>
+</div>
+</footer>
 
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="bootstrap/assets/javascripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/vistas.js"></script>
+<script type="text/javascript" src="js/lib.js"></script>
+<script type="text/javascript" src="js/jquery.ajaxData.js"></script>
+<script type="text/javascript" src="js/init.js"></script>
+</body>
 
-    <script type="text/javascript" src="bootstrap/assets/javascripts/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/vistas.js"></script>
-    <script type="text/javascript" src="js/lib.js"></script>
-    <script type="text/javascript" src="js/jquery.ajaxData.js"></script>
-    <script type="text/javascript" src="js/init.js"></script>
-
-
-   </body>
-
- </html>
+</html>
