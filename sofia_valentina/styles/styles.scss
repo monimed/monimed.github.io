@@ -103,32 +103,35 @@ body{
 				vertical-align: middle;
 				margin-right: 5px;
 			}
-			&:hover{
-				background-color: rgba(253,176,190, .5);
-				padding: 10px 20px;
-				-webkit-transition: background 1s;
-				cursor: pointer;
-				text-decoration: none;
-				&:after{
-					content: '\00a0';
-					display: inline-block;
-					width: 100%;
-					height: 3px;
-					background-color: $rosa;
-					position: absolute;
-			        top: 36px;
-    				left: 0;
-    				right: 0;
-    				margin: 0 auto;
-				    animation-name: anchor;
-				    animation-duration: 1s;
-				    animation-delay: -300ms;
-				    animation-timing-function: cubic-bezier(.66,.35,.49,.78);
-				    -webkit-transition: background 1s;
-					-moz-transition: background 1s;
-					-o-transition: background 1s;
-					transition: background 1s;
+			@media (min-width:1025px){
+				&:hover{
+					background-color: rgba(253,176,190, .5);
+					padding: 10px 20px;
+					-webkit-transition: background 1s;
+					cursor: pointer;
+					text-decoration: none;
+					&:after{
+						content: '\00a0';
+						display: inline-block;
+						width: 100%;
+						height: 3px;
+						background-color: $rosa;
+						position: absolute;
+				        top: 36px;
+	    				left: 0;
+	    				right: 0;
+	    				margin: 0 auto;
+					    animation-name: anchor;
+					    animation-duration: 1s;
+					    animation-delay: -300ms;
+					    animation-timing-function: cubic-bezier(.66,.35,.49,.78);
+					    -webkit-transition: background 1s;
+						-moz-transition: background 1s;
+						-o-transition: background 1s;
+						transition: background 1s;
+					}
 				}
+
 			}
 		}
 		.answer{
