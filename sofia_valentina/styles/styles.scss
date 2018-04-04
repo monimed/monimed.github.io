@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'blacklist';
+    src: url('../fonts/blacklist.eot');
+    src: url('../fonts/blacklist.eot?#iefix') format('embedded-opentype'), 
+    url('../fonts/blacklist.woff2') format('woff2'), 
+    url('../fonts/blacklist.woff') format('woff'), 
+    url('../fonts/blacklist.ttf') format('truetype'), 
+    url('../fonts/blacklist.svg#Open Sans') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lemonmilk';
+    src: url('../fonts/lemonmilk.eot');
+    src: url('../fonts/lemonmilk.eot?#iefix') format('embedded-opentype'), 
+    url('../fonts/lemonmilk.woff2') format('woff2'), 
+    url('../fonts/lemonmilk.woff') format('woff'), 
+    url('../fonts/lemonmilk.ttf') format('truetype'), 
+    url('../fonts/lemonmilk.svg#Open Sans') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'lemonmilklight';
+    src: url('../fonts/lemonmilklight.eot');
+    src: url('../fonts/lemonmilklight.eot?#iefix') format('embedded-opentype'), 
+    url('../fonts/lemonmilklight.woff2') format('woff2'), 
+    url('../fonts/lemonmilklight.woff') format('woff'), 
+    url('../fonts/lemonmilklight.ttf') format('truetype'), 
+    url('../fonts/lemonmilklight.svg#Open Sans') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+$dorado: #ca8e39;
+$rosa: #fdb0be;
+
+body{
+	font-family: 'lemonmilk' !important;
+	font-size: 1em;
+	.body{
+		text-align: center;
+		h1{
+			background-image: url('../images/ornament.jpg');
+			background-repeat: no-repeat;
+		    background-size: 100%;
+		    height: 390px;
+		    background-position: 0px -200px;
+		    font-size: 2em;
+		    span{
+	    	    position: relative;
+	    		top: 245px;
+		    }
+		    @media (max-width: 425px){
+		    	background-position: 0 0;
+		    	height: 220px;
+		    	span{
+		    		top: 100px;
+		    	}
+		    }
+		    @media (min-width: 426px) and (max-width: 1024px){
+		    	background-position: 0 -170px;
+		    	height: 243px;
+		    	span{
+		    		top: 100px;
+		    	}
+		    }
+		}
+		.text1{
+			font-family: 'lemonmilklight';
+			margin-bottom: 3%;
+		}
+		h2{
+			font-family: 'blacklist';
+			font-size: 5em;
+			color: $dorado;
+		}
+	}
+	@keyframes anchor {
+    from {width: 0%; background-color: transparent;}
+    to {width: 100%; background-color: $rosa;}
+}
+	.info{
+		text-align: center;
+		margin-top: 2%;
+		font-family: 'lemonmilklight';
+		a{
+			position: relative;
+			margin-bottom: 8px;
+			text-decoration: none;
+			color: black;
+			&:before{
+				content: '\00a0';
+				display: inline-block;
+				width: 0px;
+				height: 0px;
+				border-left: 10px solid $rosa;
+				border-top: 10px solid transparent;
+				border-bottom: 10px solid transparent;
+				vertical-align: middle;
+				margin-right: 5px;
+			}
+			&:hover{
+				background-color: rgba(253,176,190, .5);
+				padding: 10px 20px;
+				-webkit-transition: background 1s;
+				cursor: pointer;
+				text-decoration: none;
+				&:after{
+					content: '\00a0';
+					display: inline-block;
+					width: 100%;
+					height: 3px;
+					background-color: $rosa;
+					position: absolute;
+			        top: 36px;
+    				left: 0;
+    				right: 0;
+    				margin: 0 auto;
+				    animation-name: anchor;
+				    animation-duration: 1s;
+				    animation-delay: -300ms;
+				    animation-timing-function: cubic-bezier(.66,.35,.49,.78);
+				    -webkit-transition: background 1s;
+					-moz-transition: background 1s;
+					-o-transition: background 1s;
+					transition: background 1s;
+				}
+			}
+		}
+		.answer{
+			color: $dorado;
+			margin-top: 15px;
+		}
+		#map{
+			width: 90%;
+			height: 400px;
+		}
+		.table{
+			margin: 0 auto 30px auto;
+		}
+	}
+}
+
