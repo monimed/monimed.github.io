@@ -4,7 +4,9 @@
     font-family: 'Montserrat', sans-serif;
 
 }
-
+html {
+    scroll-behavior: smooth;
+  }
 .desktop{
     display: block !important;
 }
@@ -59,6 +61,22 @@ header{
     background-size: cover;
     background-position: center;
 }
+#navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+.sticky {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+  }
+.sticky + .content {
+    padding-top: 53px;
+}
+#content.sticky{
+    padding-top:53px;
+}
 img{
     max-width: 100%;
 }
@@ -79,7 +97,7 @@ h1{
     }
 }
 .navbar-default{
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.49), rgba(255, 255, 255, 0.49)), linear-gradient(90.05deg, #F3B2B0 25.22%, #FEEAB6 53.47%, #CBD2EF 80.56%) !important;
+    background: white !important;
     margin-bottom: 0 !important;
     .navbar-collapse{ 
         .nav{
@@ -115,9 +133,10 @@ h1{
                     }
                     .dropdown-menu{ 
                         background: #E9E9F9;
-                        padding: 30px 40px;
+                        padding: 13px 40px;
                         width: 100vw;
-                        max-width: 1200px;
+                        position: absolute;
+                        left: -32px;
                         li{
                             display: inline-block;
                             padding: 0 30px;
@@ -156,7 +175,7 @@ h1{
 }
 
 .navbar-header{
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.49), rgba(255, 255, 255, 0.49)), linear-gradient(90.05deg, #F3B2B0 25.22%, #FEEAB6 53.47%, #CBD2EF 80.56%);
+    background: white;
     .navbar-toggle{
         float: left;
         margin-left: 0;
@@ -197,6 +216,11 @@ h1{
     background-position: center;
     .text{
         margin: 30px 0;
+        background: #ffffff40;
+        padding: 20px 30px;
+    }
+    h4{
+        margin-bottom: 0;
     }
     &.one{
         background-image: url('../images/windsorbg.jpg');
@@ -228,7 +252,59 @@ h1{
 }
 
 footer{
-	background-color: black;
+    background: rgba(98, 244, 253, 0.2);
+    img{
+        mix-blend-mode: multiply;
+    }
+    .footer-primary{
+        padding-bottom: 40px;
+    }
+    .my-life{
+        ul{
+            list-style: none;
+            padding: 0;
+            li{
+                margin-bottom: 15px;
+                &:before{
+                    content: "\00a0";
+                    width: 20px;
+                    height: 20px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    display: inline-block;
+                    margin-right: 5px;
+                    background-size: 18px;
+                }
+                &.located{
+                    &:before{
+                        background-image: url("../images/located.svg");
+                        background-size: 23px;
+                    }
+                }
+                &.status{
+                    &:before{
+                        background-image: url("../images/status.svg");
+                        background-size: 18px;
+                    }
+                }
+                &.relocation{
+                    &:before{
+                        background-image: url("../images/relocation.svg");
+                        background-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+    h3{
+        margin-bottom: 30px;
+    }
+    .copyright{
+        text-align: center;
+        padding: 11px 0;
+        background: #6cd7f1;
+        color: rgb(70, 71, 75);
+    }
 }
 
 
@@ -290,6 +366,13 @@ footer{
                 }
             }
         }
+        .navbar-nav{
+            li.mobile{
+                a{
+                    padding: 10px 5px;
+                }
+            }
+        }
     }
     
 }
@@ -303,6 +386,46 @@ footer{
         }
         .text{
             margin: 0px 0 30px;
+        }
+    }
+}
+
+@media (min-width: 1024px){
+    footer{
+        .footer-primary{
+            display: flex;
+            .picture-of-me{
+                flex-basis: 33%;
+                order: 2;
+            }
+            .about {
+                order: 1;
+                flex-basis: 50%;
+                padding: 0 30px;
+            }
+            .my-life{
+                order: 3;
+                flex-basis: 26%;
+            }
+            img{
+                width: 100%;
+                padding: 0 30px;
+            }
+        }
+
+    }
+}
+@media (max-width: 1023px){
+    footer{
+        h3{
+            text-align: center;
+        }
+        .picture-of-me{
+            text-align: center;
+            display: block;
+        }
+        .my-life, .about{
+            padding: 0 40px;
         }
     }
 }

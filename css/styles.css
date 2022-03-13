@@ -111,6 +111,9 @@
 * {
   font-family: 'Montserrat', sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 .desktop {
   display: block !important;
 }
@@ -160,6 +163,22 @@ header {
   background-size: cover;
   background-position: center;
 }
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+.sticky {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+}
+.sticky + .content {
+  padding-top: 53px;
+}
+#content.sticky {
+  padding-top: 53px;
+}
 img {
   max-width: 100%;
 }
@@ -180,7 +199,7 @@ h1 p {
   font-size: 20px;
 }
 .navbar-default {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.49), rgba(255, 255, 255, 0.49)), linear-gradient(90.05deg, #F3B2B0 25.22%, #FEEAB6 53.47%, #CBD2EF 80.56%) !important;
+  background: white !important;
   margin-bottom: 0 !important;
 }
 .navbar-default .navbar-collapse .nav li a {
@@ -213,9 +232,10 @@ h1 p {
 }
 .navbar-default .navbar-collapse .nav .portfolio.open .dropdown-menu {
   background: #E9E9F9;
-  padding: 30px 40px;
+  padding: 13px 40px;
   width: 100vw;
-  max-width: 1200px;
+  position: absolute;
+  left: -32px;
 }
 .navbar-default .navbar-collapse .nav .portfolio.open .dropdown-menu li {
   display: inline-block;
@@ -237,7 +257,7 @@ h1 p {
   height: 18px;
 }
 .navbar-header {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.49), rgba(255, 255, 255, 0.49)), linear-gradient(90.05deg, #F3B2B0 25.22%, #FEEAB6 53.47%, #CBD2EF 80.56%);
+  background: white;
 }
 .navbar-header .navbar-toggle {
   float: left;
@@ -278,6 +298,11 @@ h1 p {
 }
 .project .text {
   margin: 30px 0;
+  background: #ffffff40;
+  padding: 20px 30px;
+}
+.project h4 {
+  margin-bottom: 0;
 }
 .project.one {
   background-image: url('../images/windsorbg.jpg');
@@ -303,7 +328,51 @@ h1 p {
   bottom: -0.5em;
 }
 footer {
-  background-color: black;
+  background: rgba(98, 244, 253, 0.2);
+}
+footer img {
+  mix-blend-mode: multiply;
+}
+footer .footer-primary {
+  padding-bottom: 40px;
+}
+footer .my-life ul {
+  list-style: none;
+  padding: 0;
+}
+footer .my-life ul li {
+  margin-bottom: 15px;
+}
+footer .my-life ul li:before {
+  content: "\00a0";
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 5px;
+  background-size: 18px;
+}
+footer .my-life ul li.located:before {
+  background-image: url("../images/located.svg");
+  background-size: 23px;
+}
+footer .my-life ul li.status:before {
+  background-image: url("../images/status.svg");
+  background-size: 18px;
+}
+footer .my-life ul li.relocation:before {
+  background-image: url("../images/relocation.svg");
+  background-size: 20px;
+}
+footer h3 {
+  margin-bottom: 30px;
+}
+footer .copyright {
+  text-align: center;
+  padding: 11px 0;
+  background: #6cd7f1;
+  color: #46474b;
 }
 @media (max-width: 768px) {
   .mobile {
@@ -348,6 +417,9 @@ footer {
     width: 10px;
     height: 18px;
   }
+  header .navbar-nav li.mobile a {
+    padding: 10px 5px;
+  }
 }
 @media (max-width: 920px) {
   .project img {
@@ -357,5 +429,40 @@ footer {
   }
   .project .text {
     margin: 0px 0 30px;
+  }
+}
+@media (min-width: 1024px) {
+  footer .footer-primary {
+    display: flex;
+  }
+  footer .footer-primary .picture-of-me {
+    flex-basis: 33%;
+    order: 2;
+  }
+  footer .footer-primary .about {
+    order: 1;
+    flex-basis: 50%;
+    padding: 0 30px;
+  }
+  footer .footer-primary .my-life {
+    order: 3;
+    flex-basis: 26%;
+  }
+  footer .footer-primary img {
+    width: 100%;
+    padding: 0 30px;
+  }
+}
+@media (max-width: 1023px) {
+  footer h3 {
+    text-align: center;
+  }
+  footer .picture-of-me {
+    text-align: center;
+    display: block;
+  }
+  footer .my-life,
+  footer .about {
+    padding: 0 40px;
   }
 }
